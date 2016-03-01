@@ -15,7 +15,7 @@ public class CamController : MonoBehaviour {
 	void Start () {
 		tgtTF = myTarget.GetComponent<Transform> ();
 		myTF = GetComponent<Transform> ();
-		speed = myTarget.GetComponent<SpriteController> ().speed;
+		speed = myTarget.GetComponent<Person>().speed;
 
 		Vector3 newPos = myTF.position;
 		newPos.x = tgtTF.position.x;
