@@ -48,6 +48,7 @@ public class Ghost : InteractableObject {
 		otherPerson.cooldown = Time.time + 2f;
 		//update camera
 		mainCam.GetComponent<CamController>().myTarget = otherPerson.gameObject;
+		mainCam.GetComponent<CamController> ().speed = 1f;
 		//update ghost hunter
 		ghostHunter.player = otherPerson.gameObject;
 		//set this game object false

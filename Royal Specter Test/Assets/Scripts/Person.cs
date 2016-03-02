@@ -119,11 +119,13 @@ public class Person : InteractableObject {
 
 	void UseGhostForm(){
 		Debug.Log ("player is now the ghost");
+		ghost.transform.position = gameObject.transform.position;
 		ghost.gameObject.SetActive (true);
 		ghost.ghostForm = true;
 		gameObject.GetComponent<CircleCollider2D> ().enabled = false;
 		player = false;
 		mainCam.GetComponent<CamController>().myTarget = ghost.gameObject;
+		mainCam.GetComponent<CamController> ().speed = 1.5f;
 		ghostHunter.player = ghost.gameObject;
 		ghost.cooldown = Time.time + 2f;
 	}

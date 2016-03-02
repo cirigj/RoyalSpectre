@@ -4,7 +4,7 @@ using System.Collections;
 public class CamController : MonoBehaviour {
 
 	public GameObject myTarget;
-	private float speed = 1f;
+	public float speed;
 	public float lockY = 2.25f;
 	public float lockZ = 7;
 	public float deadRange = 1;
@@ -14,6 +14,7 @@ public class CamController : MonoBehaviour {
 		Vector3 newPos = transform.position;
 		newPos.x = myTarget.transform.position.x;
 		transform.position = newPos;
+		speed = 1.5f; // same as ghost to start because player starts as ghost
 	}
 	
 	// Update is called once per frame
