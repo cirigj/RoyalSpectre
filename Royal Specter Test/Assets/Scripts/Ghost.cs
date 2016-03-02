@@ -63,8 +63,8 @@ public class Ghost : InteractableObject {
 			//anim.SetBool ("walkingUp",true);
 			//anim.SetBool ("idle", false);
 			//upperbounds check
-			if((transform.position + Vector3.forward * speed * Time.deltaTime).z < 2)
-				transform.position += Vector3.forward * speed * Time.deltaTime;
+			//if((transform.position + Vector3.forward * speed * Time.deltaTime).z < 2)
+			transform.position += Vector3.forward * speed * Time.deltaTime;
 		}
 		if (Input.GetKey (KeyCode.A)) {
 			walkingLeft = true;
@@ -77,8 +77,8 @@ public class Ghost : InteractableObject {
 			//anim.SetBool ("walkingDown",true);
 			//anim.SetBool ("idle", false);
 			//lowerbounds check
-			if((transform.position + Vector3.forward * speed * Time.deltaTime).z > -2)
-				transform.position += Vector3.back * speed * Time.deltaTime;
+			//if((transform.position + Vector3.forward * speed * Time.deltaTime).z > -2)
+			transform.position += Vector3.back * speed * Time.deltaTime;
 		}
 		if (Input.GetKey (KeyCode.D)) {
 			walkingRight = true;
