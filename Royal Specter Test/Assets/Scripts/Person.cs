@@ -9,7 +9,7 @@ public class Person : InteractableObject {
 	public bool walkingLeft, walkingRight, walkingUp, walkingDown, canSwitch;
 	//moving speed
 	public float speed = 1f;
-	float cooldown;
+	public float cooldown;
 	public Camera mainCam;
 	public GhostHunter ghostHunter;
 
@@ -28,6 +28,8 @@ public class Person : InteractableObject {
 		} catch {
 			Debug.Log ("Need reference to ghost hunter assigned in the inspector");
 		}
+		if(player) gameObject.GetComponent<CircleCollider2D> ().enabled = true;
+		else gameObject.GetComponent<CircleCollider2D> ().enabled = false;
 	}
 
 	//if player tries to talk
@@ -37,15 +39,15 @@ public class Person : InteractableObject {
 
 	//if player wants to take control
 	public void Control(Person otherPerson){
-		//Debug.Log ("Switching " + gameObject.name + " with " + otherPerson.gameObject.name);
+		Debug.Log (otherPerson.gameObject.name + " is now the player");
 		//switch player var
 		player = false;
 		otherPerson.player = true;
 		//switch up the trigger colliders
-		gameObject.GetComponent<BoxCollider2D> ().enabled = true;
-		otherPerson.gameObject.GetComponent<BoxCollider2D> ().enabled = false;
+		gameObject.GetComponent<CircleCollider2D> ().enabled = false;
+		otherPerson.gameObject.GetComponent<CircleCollider2D> ().enabled = true;
 		//set cooldown of switch
-		cooldown = Time.time + 5f;
+		otherPerson.cooldown = Time.time + 2f;
 		//update camera
 		mainCam.GetComponent<CamController>().myTarget = otherPerson.gameObject;
 		//update ghost hunter
@@ -54,7 +56,7 @@ public class Person : InteractableObject {
 
 
 	// Update is called once per frame
-	void FixedUpdate () {
+	void Update () {
 		//if player is controlling person
 		if (player) {
 			//moving and animation logic ----------------------------------------------
@@ -62,7 +64,9 @@ public class Person : InteractableObject {
 				walkingUp = true;
 				//anim.SetBool ("walkingUp",true);
 				//anim.SetBool ("idle", false);
-				transform.position += Vector3.forward * speed * Time.deltaTime;
+				//upperbounds check
+				if((transform.position + Vector3.forward * speed * Time.deltaTime).z < 2)
+					transform.position += Vector3.forward * speed * Time.deltaTime;
 			}
 			if (Input.GetKey (KeyCode.A)) {
 				walkingLeft = true;
@@ -74,7 +78,9 @@ public class Person : InteractableObject {
 				walkingDown = true;
 				//anim.SetBool ("walkingDown",true);
 				//anim.SetBool ("idle", false);
-				transform.position += Vector3.back * speed * Time.deltaTime;
+				//lowerbounds check
+				if((transform.position + Vector3.forward * speed * Time.deltaTime).z > -2)
+					transform.position += Vector3.back * speed * Time.deltaTime;
 			}
 			if (Input.GetKey (KeyCode.D)) {
 				walkingRight = true;
@@ -114,7 +120,7 @@ public class Person : InteractableObject {
 
 	void OnTriggerStay2D(Collider2D col){
 		//for controlling other people
-		if (Input.GetKey (KeyCode.Space) && col.gameObject.GetComponent<Person>() != null && cooldown <= Time.time) {
+		if (player && Input.GetKey (KeyCode.Space) && col.gameObject.GetComponent<Person>() != null && cooldown <= Time.time) {
 			Control (col.gameObject.GetComponent<Person> ());
 		}
 		//for talking to other people
