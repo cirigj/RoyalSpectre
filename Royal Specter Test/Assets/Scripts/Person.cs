@@ -12,6 +12,7 @@ public class Person : InteractableObject {
 	public float cooldown;
 	public Camera mainCam;
 	public GhostHunter ghostHunter;
+	public Ghost ghost;
 
 	//public Animator anim;
 
@@ -25,11 +26,11 @@ public class Person : InteractableObject {
 		mainCam = Camera.main;
 		try{
 			ghostHunter.GetComponent<GhostHunter> ();
+			ghost = ghost.GetComponent<Ghost> ();
 		} catch {
-			Debug.Log ("Need reference to ghost hunter assigned in the inspector");
+			Debug.Log (gameObject.name + " needs reference to ghost hunter and ghost assigned in the inspector");
 		}
-		if(player) gameObject.GetComponent<CircleCollider2D> ().enabled = true;
-		else gameObject.GetComponent<CircleCollider2D> ().enabled = false;
+		gameObject.GetComponent<CircleCollider2D> ().enabled = false;
 	}
 
 	//if player tries to talk
@@ -108,9 +109,23 @@ public class Person : InteractableObject {
 				//anim.SetBool ("idle", true);
 				walkingRight = false;
 			} // -----------------------------------------------------
+			if (Input.GetKey (KeyCode.Space) && cooldown <= Time.time) {
+				UseGhostForm ();
+			}
 		} else {
 			//do npc idle stuff
 		}
+	}
+
+	void UseGhostForm(){
+		Debug.Log ("player is now the ghost");
+		ghost.gameObject.SetActive (true);
+		ghost.ghostForm = true;
+		gameObject.GetComponent<CircleCollider2D> ().enabled = false;
+		player = false;
+		mainCam.GetComponent<CamController>().myTarget = ghost.gameObject;
+		ghostHunter.player = ghost.gameObject;
+		ghost.cooldown = Time.time + 2f;
 	}
 
 	// trigger logic for talking and controlling -----------------------------------

@@ -69,7 +69,6 @@ public class GhostHunter : InteractableObject {
 		}
 		if (str == "rand") {
 			int rand = Random.Range (1, 5);
-			Debug.Log (rand);
 			switch (rand) {
 			case 1:
 				Look ("right");
