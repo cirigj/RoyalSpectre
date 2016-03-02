@@ -14,7 +14,7 @@ public class GhostHunter : InteractableObject {
 	public Vector3 lastSeenPosition;
 	public Vector3 direction; //of player
 	//spin logic
-	public float spinTimer;
+	float spinTimer;
 
 	// Use this for initialization
 	public override void Start () {
@@ -24,14 +24,14 @@ public class GhostHunter : InteractableObject {
 		anim = GetComponent<Animator> ();
 		canSeePlayer = false;
 		Look ("right"); //default true
-		spinTimer = Time.time + 5f;
+		spinTimer = Time.time + 2f;
 	}
 
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-		if (canSeePlayer) {
-			Debug.Log ("I can see you");
+		//if player is in sight or ghost hunter is not currently close to the spot the ghost was last seen
+		if (canSeePlayer || (!Mathf.Approximately(transform.position.x,lastSeenPosition.x) && !Mathf.Approximately(transform.position.z,lastSeenPosition.z))) {
 			ChasePlayer ();
 			spinTimer = Time.time + 2f; //if you can see player, keep resetting spintimer
 		} else { //wonder mode
