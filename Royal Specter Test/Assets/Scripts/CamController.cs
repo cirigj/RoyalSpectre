@@ -4,15 +4,13 @@ using System.Collections;
 public class CamController : MonoBehaviour {
 
 	public GameObject myTarget;
-	private float speed;
+	private float speed = 1f;
 	public float lockY = 2.25f;
 	public float lockZ = 7;
 	public float deadRange = 1;
 
 	// Use this for initialization
 	void Start () {
-		speed = myTarget.GetComponent<Person>().speed;
-
 		Vector3 newPos = transform.position;
 		newPos.x = myTarget.transform.position.x;
 		transform.position = newPos;

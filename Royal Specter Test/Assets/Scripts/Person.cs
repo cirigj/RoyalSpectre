@@ -8,7 +8,7 @@ public class Person : InteractableObject {
 	//bools for animations
 	public bool walkingLeft, walkingRight, walkingUp, walkingDown, canSwitch;
 	//moving speed
-	public float speed = 1f;
+	float speed = 1f;
 	public float cooldown;
 	public Camera mainCam;
 	public GhostHunter ghostHunter;
