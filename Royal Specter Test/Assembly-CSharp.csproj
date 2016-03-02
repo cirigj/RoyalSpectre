@@ -50,7 +50,6 @@
      <Compile Include="Assets\Scripts\InteractableObject.cs" />
      <Compile Include="Assets\Scripts\Person.cs" />
      <Compile Include="Assets\Scripts\SpriteController.cs" />
-     <Compile Include="Assets\Scripts\smoothFollow.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

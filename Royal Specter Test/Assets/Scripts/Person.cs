@@ -62,7 +62,7 @@ public class Person : InteractableObject {
 				walkingUp = true;
 				//anim.SetBool ("walkingUp",true);
 				//anim.SetBool ("idle", false);
-				transform.position += Vector3.back * speed * Time.deltaTime;
+				transform.position += Vector3.forward * speed * Time.deltaTime;
 			}
 			if (Input.GetKey (KeyCode.A)) {
 				walkingLeft = true;
@@ -74,7 +74,7 @@ public class Person : InteractableObject {
 				walkingDown = true;
 				//anim.SetBool ("walkingDown",true);
 				//anim.SetBool ("idle", false);
-				transform.position += Vector3.forward * speed * Time.deltaTime;
+				transform.position += Vector3.back * speed * Time.deltaTime;
 			}
 			if (Input.GetKey (KeyCode.D)) {
 				walkingRight = true;

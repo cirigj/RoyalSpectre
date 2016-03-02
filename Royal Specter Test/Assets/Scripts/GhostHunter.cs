@@ -4,7 +4,7 @@ using System.Collections;
 public class GhostHunter : InteractableObject {
 
 	//moving speed
-	float speed = .25f;
+	float speed = .8f;
 	public float FOVAngle = 110f;
 	public Animator anim;
 	public GameObject player;
@@ -12,7 +12,7 @@ public class GhostHunter : InteractableObject {
 	//ai logic
 	public bool canSeePlayer;
 	public Vector3 lastSeenPosition;
-	public Vector2 direction; //of player
+	public Vector3 direction; //of player
 
 	// Use this for initialization
 	public override void Start () {
@@ -36,7 +36,8 @@ public class GhostHunter : InteractableObject {
 	}
 
 	void ChasePlayer(){
-		transform.position += lastSeenPosition * speed * Time.deltaTime;
+		float step = speed * Time.deltaTime;
+		transform.position = Vector3.MoveTowards (transform.position, lastSeenPosition, step);
 	}
 
 	void OnTriggerStay2D(Collider2D col){
@@ -47,9 +48,9 @@ public class GhostHunter : InteractableObject {
 			direction = col.transform.position - transform.position;
 			float angle = 0f;
 			if(lookingRight)
-				angle = Vector2.Angle (direction, Vector2.right);
+				angle = Vector3.Angle (direction, Vector3.right);
 			if(lookingLeft)
-				angle = Vector2.Angle (direction, Vector2.left);
+				angle = Vector3.Angle (direction, Vector3.left);
 			//and within the field of view
 			if (angle < FOVAngle / 2) {
 				//note Edit -> proj settings -> physics 2d -> queries start in collider must be OFF, otherwise raycast will hit itself
