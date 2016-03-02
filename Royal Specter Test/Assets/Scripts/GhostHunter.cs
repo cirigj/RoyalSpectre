@@ -91,7 +91,7 @@ public class GhostHunter : InteractableObject {
 		transform.position = Vector3.MoveTowards (transform.position, lastSeenPosition, step);
 	}
 
-	void OnTriggerStay2D(Collider2D col){
+	void OnTriggerStay(Collider col){
 		//if player is within collider
 		if (col.gameObject == player) {
 			canSeePlayer = false; //just becuase player is in radius doesn't mean he can be seen
@@ -109,7 +109,8 @@ public class GhostHunter : InteractableObject {
 			//and within the field of view
 			if (angle < FOVAngle / 2) {
 				//note Edit -> proj settings -> physics 2d -> queries start in collider must be OFF, otherwise raycast will hit itself
-				RaycastHit2D hit = Physics2D.Raycast (transform.position, direction.normalized);
+				RaycastHit hit;
+				Physics.Raycast (transform.position, direction.normalized, out hit);
 				//and there is nothing in the way
 				if (hit.collider != null) {
 					if (hit.collider.gameObject == player) {
@@ -123,7 +124,7 @@ public class GhostHunter : InteractableObject {
 	}
 
 	//if player is not in radius of the ghost hunter
-	void OnTriggerExit2D(Collider2D col){
+	void OnTriggerExit(Collider col){
 		if (col.gameObject == player) {
 			canSeePlayer = false;
 		}

@@ -29,7 +29,7 @@ public class Ghost : InteractableObject {
 		ghostForm = true;
 	}
 
-	void OnTriggerStay2D(Collider2D col){
+	void OnTriggerStay(Collider col){
 		//for controlling other people
 		if (ghostForm && Input.GetKey (KeyCode.Space) && col.gameObject.GetComponent<Person>() != null && cooldown <= Time.time) {
 			Control (col.gameObject.GetComponent<Person> ());
@@ -43,7 +43,7 @@ public class Ghost : InteractableObject {
 		ghostForm = false;
 		otherPerson.player = true;
 		//switch up the trigger colliders
-		otherPerson.gameObject.GetComponent<CircleCollider2D> ().enabled = true;
+		//otherPerson.gameObject.GetComponent<CircleCollider> ().enabled = true;
 		//set cooldown of switch
 		otherPerson.cooldown = Time.time + 2f;
 		//update camera

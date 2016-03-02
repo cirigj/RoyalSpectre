@@ -30,7 +30,7 @@ public class Person : InteractableObject {
 		} catch {
 			Debug.Log (gameObject.name + " needs reference to ghost hunter and ghost assigned in the inspector");
 		}
-		gameObject.GetComponent<CircleCollider2D> ().enabled = false;
+		//gameObject.GetComponent<CircleCollider> ().enabled = false;
 	}
 
 	//if player tries to talk
@@ -45,8 +45,8 @@ public class Person : InteractableObject {
 		player = false;
 		otherPerson.player = true;
 		//switch up the trigger colliders
-		gameObject.GetComponent<CircleCollider2D> ().enabled = false;
-		otherPerson.gameObject.GetComponent<CircleCollider2D> ().enabled = true;
+		//gameObject.GetComponent<CircleCollider> ().enabled = false;
+		//otherPerson.gameObject.GetComponent<CircleCollider> ().enabled = true;
 		//set cooldown of switch
 		otherPerson.cooldown = Time.time + 2f;
 		//update camera
@@ -122,7 +122,7 @@ public class Person : InteractableObject {
 		ghost.transform.position = gameObject.transform.position;
 		ghost.gameObject.SetActive (true);
 		ghost.ghostForm = true;
-		gameObject.GetComponent<CircleCollider2D> ().enabled = false;
+		//gameObject.GetComponent<SphereCollider> ().enabled = false;
 		player = false;
 		mainCam.GetComponent<CamController>().myTarget = ghost.gameObject;
 		mainCam.GetComponent<CamController> ().speed = 1.5f;
@@ -131,11 +131,11 @@ public class Person : InteractableObject {
 	}
 
 	// trigger logic for talking and controlling -----------------------------------
-	void OnTriggerEnter2D(Collider2D col){
+	void OnTriggerEnter(Collider col){
 		//Debug.Log ("Entered trigger");
 	}
 
-	void OnTriggerStay2D(Collider2D col){
+	void OnTriggerStay(Collider col){
 		//for controlling other people
 		if (player && Input.GetKey (KeyCode.Space) && col.gameObject.GetComponent<Person>() != null && cooldown <= Time.time) {
 			Control (col.gameObject.GetComponent<Person> ());
@@ -146,7 +146,7 @@ public class Person : InteractableObject {
 		}
 	}
 
-	void OnTriggerExit2D(Collider2D other){
+	void OnTriggerExit(Collider other){
 		//Debug.Log ("Left Trigger");
 	}
 }
