@@ -15,6 +15,8 @@ public class GhostHunter : InteractableObject {
 	public Vector3 direction; //of player
 	//spin logic
 	float spinTimer;
+	public bool sawBodySwitch;
+	public bool bodySwitch;
 
 	// Use this for initialization
 	public override void Start () {
@@ -23,8 +25,10 @@ public class GhostHunter : InteractableObject {
 		objType = type.GhostHunter;
 		anim = GetComponent<Animator> ();
 		canSeePlayer = false;
-		Look ("right"); //default true
+		Look ("right"); //default direction
 		spinTimer = Time.time + 2f;
+		bodySwitch = false;
+		sawBodySwitch = false;
 	}
 
 	
@@ -39,6 +43,14 @@ public class GhostHunter : InteractableObject {
 				Look ("rand");
 				spinTimer = Time.time + 2f;
 			}
+		}
+		//if the player switched bodies and the ghost hunter saw it, set bool to true
+		if (canSeePlayer && bodySwitch) {
+			sawBodySwitch = true;
+		}
+		if (!canSeePlayer) {
+			bodySwitch = false; //if you cant see the player, reset bodySwitch bools
+			sawBodySwitch = false;
 		}
 	}
 
@@ -89,11 +101,20 @@ public class GhostHunter : InteractableObject {
 	void ChasePlayer(){
 		float step = speed * Time.deltaTime;
 		transform.position = Vector3.MoveTowards (transform.position, lastSeenPosition, step);
+		//stay looking at player
+		if (Mathf.Abs(direction.normalized.x) > Mathf.Abs(direction.normalized.z) && direction.normalized.x > 0)
+			Look ("right");
+		if (Mathf.Abs(direction.normalized.x) > Mathf.Abs(direction.normalized.z) && direction.normalized.x < 0)
+			Look ("left");
+		if (Mathf.Abs(direction.normalized.x) < Mathf.Abs(direction.normalized.z) && direction.normalized.z > 0)
+			Look ("up");
+		if (Mathf.Abs(direction.normalized.x) < Mathf.Abs(direction.normalized.z) && direction.normalized.x < 0)
+			Look ("down");
 	}
 
 	void OnTriggerStay(Collider col){
-		//if player is within collider
-		if (col.gameObject == player) {
+		//if player is a ghost or if he saw the player switch bodies
+		if (col.gameObject.GetComponent<Ghost>() != null || (col.gameObject == player && sawBodySwitch)) {
 			canSeePlayer = false; //just becuase player is in radius doesn't mean he can be seen
 			//get direction and angle of player
 			direction = col.transform.position - transform.position;
@@ -113,13 +134,13 @@ public class GhostHunter : InteractableObject {
 				Physics.Raycast (transform.position, direction.normalized, out hit);
 				//and there is nothing in the way
 				if (hit.collider != null) {
-					if (hit.collider.gameObject == player) {
+					if (hit.collider.gameObject.GetComponent<Ghost>() != null || (col.gameObject == player && sawBodySwitch)) {
 						canSeePlayer = true;
 						lastSeenPosition = player.transform.position;
+						Debug.Log(direction.normalized);
 					}
 				}
 			}
-					
 		}
 	}
 

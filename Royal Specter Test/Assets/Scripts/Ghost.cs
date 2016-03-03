@@ -51,6 +51,8 @@ public class Ghost : InteractableObject {
 		mainCam.GetComponent<CamController> ().speed = 1f;
 		//update ghost hunter
 		ghostHunter.player = otherPerson.gameObject;
+		//tell ghost hunter ai you just switched bodies
+		ghostHunter.bodySwitch = true;
 		//set this game object false
 		gameObject.SetActive (false);
 	}
