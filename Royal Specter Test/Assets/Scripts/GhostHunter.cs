@@ -13,10 +13,10 @@ public class GhostHunter : InteractableObject {
 	public bool canSeePlayer;
 	public Vector3 lastSeenPosition;
 	public Vector3 direction; //of player
-	//spin logic
-	float spinTimer;
 	public bool sawBodySwitch;
 	public bool bodySwitch;
+	//spin logic
+	float spinTimer;
 
 	// Use this for initialization
 	public override void Start () {
@@ -141,6 +141,9 @@ public class GhostHunter : InteractableObject {
 					}
 				}
 			}
+		}
+		if (col.gameObject.tag == "GhostWall") {
+			
 		}
 	}
 
