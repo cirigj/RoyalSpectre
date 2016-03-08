@@ -13,6 +13,8 @@ public class Ghost : InteractableObject {
 	public Camera mainCam;
 	public GhostHunter ghostHunter;
 
+	public GameObject ghostWall;
+
 	// Use this for initialization
 	public override void Start () {
 		base.Start ();
@@ -27,6 +29,8 @@ public class Ghost : InteractableObject {
 			Debug.Log ("Need reference to ghost hunter assigned in the inspector");
 		}
 		ghostForm = true;
+
+		Physics.IgnoreCollision (GetComponent<SphereCollider> (), ghostWall.GetComponent<BoxCollider> ());
 	}
 
 	void OnTriggerStay(Collider col){
