@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class GhostHunter : InteractableObject {
 
@@ -15,8 +16,13 @@ public class GhostHunter : InteractableObject {
 	public Vector3 direction; //of player
 	public bool sawBodySwitch;
 	public bool bodySwitch;
+	public bool playerTransition;
 	//spin logic
 	float spinTimer;
+	//waypoint logic
+	public List<Transform> waypointList;
+	Vector3 closestWaypointPosition;
+	public bool knowPlayerRoom;
 
 	// Use this for initialization
 	public override void Start () {
@@ -31,14 +37,20 @@ public class GhostHunter : InteractableObject {
 		sawBodySwitch = false;
 	}
 
-	
+
 	// Update is called once per frame
 	void FixedUpdate () {
+		if (!canSeePlayer && playerTransition) { //if player transitioned rooms
+			//find closest waypoint
+			Vector3 point = getClosestWaypoint ();
+			transform.position = Vector3.MoveTowards (transform.position, point, speed * Time.deltaTime);
+			lastSeenPosition = transform.position;
+		}
 		//if player is in sight or ghost hunter is not currently close to the spot the ghost was last seen
-		if (canSeePlayer || (!Mathf.Approximately(transform.position.x,lastSeenPosition.x) && !Mathf.Approximately(transform.position.z,lastSeenPosition.z))) {
+		else if (canSeePlayer || (!Mathf.Approximately (transform.position.x, lastSeenPosition.x) && !Mathf.Approximately (transform.position.z, lastSeenPosition.z))) {
 			ChasePlayer ();
 			spinTimer = Time.time + 2f; //if you can see player, keep resetting spintimer
-		} else { //wonder mode
+		} else { //spin mode
 			if (spinTimer <= Time.time) {
 				Look ("rand");
 				spinTimer = Time.time + 2f;
@@ -52,6 +64,19 @@ public class GhostHunter : InteractableObject {
 			bodySwitch = false; //if you cant see the player, reset bodySwitch bools
 			sawBodySwitch = false;
 		}
+	}
+
+	Vector3 getClosestWaypoint(){
+		Transform bestTarget = null;
+		float closestDist = Mathf.Infinity;
+		foreach (Transform t in waypointList) {
+			float distance = (t.position - lastSeenPosition).sqrMagnitude;
+			if (distance < closestDist) {
+				closestDist = distance;
+				bestTarget = t;
+			}
+		}
+		return bestTarget.position;
 	}
 
 	void Look(string str){
@@ -137,13 +162,9 @@ public class GhostHunter : InteractableObject {
 					if (hit.collider.gameObject.GetComponent<Ghost>() != null || (col.gameObject == player && sawBodySwitch)) {
 						canSeePlayer = true;
 						lastSeenPosition = player.transform.position;
-						Debug.Log(direction.normalized);
 					}
 				}
 			}
-		}
-		if (col.gameObject.tag == "GhostWall") {
-			
 		}
 	}
 

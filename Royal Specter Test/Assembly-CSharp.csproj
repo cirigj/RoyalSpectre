@@ -50,6 +50,7 @@
      <Compile Include="Assets\Scripts\GhostHunter.cs" />
      <Compile Include="Assets\Scripts\InteractableObject.cs" />
      <Compile Include="Assets\Scripts\Person.cs" />
+     <Compile Include="Assets\Scripts\RoomTransitions.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

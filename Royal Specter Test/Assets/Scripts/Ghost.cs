@@ -13,7 +13,7 @@ public class Ghost : InteractableObject {
 	public Camera mainCam;
 	public GhostHunter ghostHunter;
 
-	public GameObject ghostWall;
+	//public GameObject ghostWall;
 
 	// Use this for initialization
 	public override void Start () {
@@ -30,7 +30,12 @@ public class Ghost : InteractableObject {
 		}
 		ghostForm = true;
 
-		Physics.IgnoreCollision (GetComponent<SphereCollider> (), ghostWall.GetComponent<BoxCollider> ());
+		//Physics.IgnoreCollision (GetComponent<SphereCollider> (), ghostWall.GetComponent<BoxCollider> ());
+	}
+
+	void OnTriggerEnter(Collider col){
+		if (col.gameObject.tag == "GhostWall")
+			Physics.IgnoreCollision (GetComponent<SphereCollider> (), col.GetComponent<BoxCollider> ());
 	}
 
 	void OnTriggerStay(Collider col){
