@@ -54,7 +54,6 @@ public class Person : InteractableObject {
 		mainCam.GetComponent<CamController>().myTarget = otherPerson.gameObject;
 		//update ghost hunter
 		ghostHunter.player = otherPerson.gameObject;
-		otherPerson.suspicionLevel = 100;//max suspicion
 	}
 
 
@@ -141,6 +140,8 @@ public class Person : InteractableObject {
 	// trigger logic for talking and controlling -----------------------------------
 	void OnTriggerEnter(Collider col){
 		//Debug.Log ("Entered trigger");
+		//if(col.gameObject.GetComponent<GhostHunter>() != null && ghostHunter.canSeePlayer)
+		//	Debug.Log ("Caught by Ghost hunter, you lose");
 	}
 
 	void OnTriggerStay(Collider col){

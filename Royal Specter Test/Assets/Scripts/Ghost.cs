@@ -36,6 +36,9 @@ public class Ghost : InteractableObject {
 	void OnTriggerEnter(Collider col){
 		if (col.gameObject.tag == "GhostWall")
 			Physics.IgnoreCollision (GetComponent<SphereCollider> (), col.GetComponent<BoxCollider> ());
+		//if (col.gameObject.GetComponent<GhostHunter> () != null) {
+		//	Debug.Log ("Caught by Ghost hunter, you lose");
+		//}
 	}
 
 	void OnTriggerStay(Collider col){
@@ -58,7 +61,7 @@ public class Ghost : InteractableObject {
 		//update camera
 		mainCam.GetComponent<CamController>().myTarget = otherPerson.gameObject;
 		mainCam.GetComponent<CamController> ().speed = 1f;
-		//update ghost hunter
+		//update ghost hunter's player
 		ghostHunter.player = otherPerson.gameObject;
 		//tell ghost hunter ai you just switched bodies
 		ghostHunter.bodySwitch = true;

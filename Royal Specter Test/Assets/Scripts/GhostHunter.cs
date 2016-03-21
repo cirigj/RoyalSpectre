@@ -46,13 +46,13 @@ public class GhostHunter : InteractableObject {
 			Vector3 point = getClosestWaypoint ();
 			transform.position = Vector3.MoveTowards (transform.position, point, speed * Time.deltaTime);
 			lastSeenPosition = transform.position; //reset last seen position to current position so below if is false
-			//lastSeenPosition = Vector3.MoveTowards (transform.position, point, speed * Time.deltaTime);
 		}
 		//if player is in sight or ghost hunter is not currently close to the spot the ghost was last seen
 		else if (canSeePlayer || (!Mathf.Approximately (transform.position.x, lastSeenPosition.x) && !Mathf.Approximately (transform.position.z, lastSeenPosition.z))) {
 			ChasePlayer ();
 			spinTimer = Time.time + 2f; //if you can see player, keep resetting spintimer
-		} else { //spin mode
+		} 
+		else { //spin mode
 			if (spinTimer <= Time.time) {
 				Look ("rand");
 				spinTimer = Time.time + 2f;
@@ -61,6 +61,8 @@ public class GhostHunter : InteractableObject {
 		//if the player switched bodies and the ghost hunter saw it, set bool to true
 		if (canSeePlayer && bodySwitch) {
 			sawBodySwitch = true;
+			if(player.GetComponent<Person> () != null)
+				player.GetComponent<Person> ().suspicionLevel = 100;
 		}
 		if (!canSeePlayer) {
 			bodySwitch = false; //if you cant see the player, reset bodySwitch bools
