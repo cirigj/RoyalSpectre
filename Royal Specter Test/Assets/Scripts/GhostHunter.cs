@@ -16,7 +16,8 @@ public class GhostHunter : InteractableObject {
 	public Vector3 direction; //of player
 	public bool sawBodySwitch;
 	public bool bodySwitch;
-	public bool playerTransition;
+	public bool playerTransition; //bool if saw player tranistion rooms, is reset upon enering room player entered
+	public GameObject currentRoom;
 	//spin logic
 	float spinTimer;
 	//waypoint logic
@@ -40,11 +41,12 @@ public class GhostHunter : InteractableObject {
 
 	// Update is called once per frame
 	void FixedUpdate () {
-		if (!canSeePlayer && playerTransition) { //if player transitioned rooms
+		if (playerTransition) { //if player transitioned rooms //!CanSeePlayer
 			//find closest waypoint
 			Vector3 point = getClosestWaypoint ();
 			transform.position = Vector3.MoveTowards (transform.position, point, speed * Time.deltaTime);
-			lastSeenPosition = transform.position;
+			lastSeenPosition = transform.position; //reset last seen position to current position so below if is false
+			//lastSeenPosition = Vector3.MoveTowards (transform.position, point, speed * Time.deltaTime);
 		}
 		//if player is in sight or ghost hunter is not currently close to the spot the ghost was last seen
 		else if (canSeePlayer || (!Mathf.Approximately (transform.position.x, lastSeenPosition.x) && !Mathf.Approximately (transform.position.z, lastSeenPosition.z))) {
@@ -63,6 +65,11 @@ public class GhostHunter : InteractableObject {
 		if (!canSeePlayer) {
 			bodySwitch = false; //if you cant see the player, reset bodySwitch bools
 			sawBodySwitch = false;
+		}
+		if (currentRoom.activeSelf == false && gameObject.GetComponentInChildren<SpriteRenderer> ().enabled) {
+			gameObject.GetComponentInChildren<SpriteRenderer> ().enabled = false;
+		} else if (currentRoom.activeSelf == true && gameObject.GetComponentInChildren<SpriteRenderer> ().enabled == false) {
+			gameObject.GetComponentInChildren<SpriteRenderer> ().enabled = true;
 		}
 	}
 

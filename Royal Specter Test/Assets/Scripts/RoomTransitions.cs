@@ -19,13 +19,20 @@ public class RoomTransitions : MonoBehaviour {
 		if(!col.isTrigger){
 			if (ghostHunter.GetComponent<GhostHunter> ().canSeePlayer) {
 				ghostHunter.GetComponent<GhostHunter> ().playerTransition = true;
-				ghostHunter.GetComponent<GhostHunter> ().canSeePlayer = false;
+				//ghostHunter.GetComponent<GhostHunter> ().canSeePlayer = false;
 			}
 			if (col.gameObject == ghostHunter) {
 				ghostHunter.GetComponent<GhostHunter> ().playerTransition = false;
 			}
 			nextRoom.gameObject.SetActive (true);
-			//8 because i put the rooms 8 units away, 4.5 so player is in correct spot
+			//set current room of person to next room, used to turn off sprite renderer
+			if (col.GetComponent<Person> () != null) {
+				col.GetComponent<Person> ().currentRoom = nextRoom;
+			}
+			if (col.GetComponent<GhostHunter> () != null) {
+				col.GetComponent<GhostHunter> ().currentRoom = nextRoom;
+			}
+			//8 because i put the rooms 8m away, 4.5 so player is in correct spot
 			if (upTransition) {
 				col.gameObject.transform.position += (4.5f * Vector3.forward);
 				if (col.gameObject != ghostHunter) {

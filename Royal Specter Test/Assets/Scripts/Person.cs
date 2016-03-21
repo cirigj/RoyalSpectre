@@ -13,6 +13,8 @@ public class Person : InteractableObject {
 	public Camera mainCam;
 	public GhostHunter ghostHunter;
 	public Ghost ghost;
+	public GameObject currentRoom;
+	public int suspicionLevel;
 
 	//public Animator anim;
 
@@ -30,6 +32,7 @@ public class Person : InteractableObject {
 		} catch {
 			Debug.Log (gameObject.name + " needs reference to ghost hunter and ghost assigned in the inspector");
 		}
+		suspicionLevel = 0;
 		//gameObject.GetComponent<CircleCollider> ().enabled = false;
 	}
 
@@ -44,15 +47,14 @@ public class Person : InteractableObject {
 		//switch player var
 		player = false;
 		otherPerson.player = true;
-		//switch up the trigger colliders
-		//gameObject.GetComponent<CircleCollider> ().enabled = false;
-		//otherPerson.gameObject.GetComponent<CircleCollider> ().enabled = true;
+		ghostHunter.bodySwitch = true;
 		//set cooldown of switch
 		otherPerson.cooldown = Time.time + 2f;
 		//update camera
 		mainCam.GetComponent<CamController>().myTarget = otherPerson.gameObject;
 		//update ghost hunter
 		ghostHunter.player = otherPerson.gameObject;
+		otherPerson.suspicionLevel = 100;//max suspicion
 	}
 
 
@@ -114,6 +116,12 @@ public class Person : InteractableObject {
 			}
 		} else {
 			//do npc idle stuff
+			//if current room is not active, turn off sprite renderer
+			if (currentRoom.activeSelf == false && gameObject.GetComponentInChildren<SpriteRenderer> ().enabled) {
+				gameObject.GetComponentInChildren<SpriteRenderer> ().enabled = false;
+			} else if (currentRoom.activeSelf == true && gameObject.GetComponentInChildren<SpriteRenderer> ().enabled == false) {
+				gameObject.GetComponentInChildren<SpriteRenderer> ().enabled = true;
+			}
 		}
 	}
 
