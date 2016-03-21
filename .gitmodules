@@ -1,0 +1,3 @@
+[submodule "RoyalSpectre/Assets/JBirdEngine"]
+	path = RoyalSpectre/Assets/JBirdEngine
+	url = https://github.com/cirigj/JBirdEngine.git
