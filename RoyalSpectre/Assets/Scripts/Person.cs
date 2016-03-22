@@ -1,5 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
+using JBirdEngine.RenUnity;
+
+[System.Serializable]
+public struct ConversationHandler {
+	public Character character;
+	public StoryBranch branch;
+}
 
 public class Person : InteractableObject {
 
@@ -16,7 +24,11 @@ public class Person : InteractableObject {
 	public GameObject currentRoom;
 	public int suspicionLevel;
 
-	//public Animator anim;
+	//dialogue stuff
+	//enum for character
+	public Character character;
+	public List<ConversationHandler> convo;
+
 
 	// Use this for initialization
 	public override void Start () {
@@ -37,8 +49,14 @@ public class Person : InteractableObject {
 	}
 
 	//if player tries to talk
-	public void Talk(){
+	public void Talk(Character otherCharacter){
 		Debug.Log ("talking");
+		for (int i = 0; i < convo.Count; i++) {
+			if (convo [i].character == otherCharacter) {
+				DialogueParser.ParseBranch (convo[i].branch);
+				break;
+			}
+		}
 	}
 
 	//if player wants to take control
@@ -150,8 +168,8 @@ public class Person : InteractableObject {
 			Control (col.gameObject.GetComponent<Person> ());
 		}
 		//for talking to other people
-		if (Input.GetKey (KeyCode.T) && col.gameObject.GetComponent<Person>() != null) {
-			Talk ();
+		if (Input.GetKeyDown (KeyCode.T) && col.gameObject.GetComponent<Person>() != null) {
+			col.gameObject.GetComponent<Person>().Talk (character);
 		}
 	}
 
