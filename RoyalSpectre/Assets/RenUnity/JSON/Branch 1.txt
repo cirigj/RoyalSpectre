@@ -1,0 +1,11 @@
+{
+    "branchName": "Branch 1",
+    "script": [
+        "/start_talk JohnCena",
+        "this is a message",
+        "/wait",
+        "this is a second message",
+        "/wait",
+        "/jump 0"
+    ]
+}
