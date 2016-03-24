@@ -1,8 +1,0 @@
-{
-    "branchName": "Branch2",
-    "script": [
-    	"obligatory jump message",
-    	"/wait",
-    	"/stop_talk"
-    ]
-}
