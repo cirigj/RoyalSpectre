@@ -31,6 +31,7 @@
 			InvalidMood = 0,
 			Happy,
 			Sad,
+            Angry,
 		}
 
 	}

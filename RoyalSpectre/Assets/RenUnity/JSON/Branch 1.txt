@@ -4,8 +4,14 @@
         "/start_talk JohnCena",
         "this is a message",
         "/wait",
+		"/set_flag ItsAFlag",
+		"/start_talk Example",
         "this is a second message",
         "/wait",
-        "/jump 0"
+        "/set_stat JohnCena Suspicion - 3",
+        "/option \"Persuade\" 0",
+        "/option \"Deceive\" 1",
+        "/option if flag ItsAFlag \"Charm\" 2",
+		"/option \"Blather\" if stat JohnCena Suspicion > 3 2 1"
     ]
 }
