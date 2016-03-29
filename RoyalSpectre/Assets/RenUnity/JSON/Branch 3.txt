@@ -1,7 +1,7 @@
 {
     "branchName": "Branch 3",
     "script": [
-        "you chose deceive",
+        "you chose Option 2",
         "/wait",
         "/stop_talk"
     ]

@@ -9,9 +9,11 @@
         "this is a second message",
         "/wait",
         "/set_stat JohnCena Suspicion - 3",
-        "/option \"Persuade\" 0",
-        "/option \"Deceive\" 1",
-        "/option if flag ItsAFlag \"Charm\" 2",
-		"/option \"Blather\" if stat JohnCena Suspicion > 3 2 1"
+        "/option \"Option 1\" 0",
+        "/option \"Option 2\" 1",
+        "/option if flag ItsAFlag \"Use the Flag\" 2",
+		"/option if stat JohnCena Suspicion > 3 \"John Cena is suspicious\" if stat JohnCena Suspicion > 6 2 1",
+		"/option if !flag ItsAFlag \"Blather\" if stat Player Blather > 3 2 1",
+		"/option if stat JohnCena Suspicion <= 3 \"Deceive\" if stat Player Deceive > 3 2 1"
     ]
 }

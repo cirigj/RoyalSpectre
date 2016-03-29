@@ -29,6 +29,7 @@
 
 		public enum Character {
 			InvalidName = 0,
+            Player,
 			Example,
 			JohnCena,
 		}

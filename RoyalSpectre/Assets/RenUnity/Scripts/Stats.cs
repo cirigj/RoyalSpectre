@@ -31,6 +31,10 @@
 			InvalidStat = 0,
 			Suspicion,
 			Loyalty,
+            Deceive,
+            Persuade,
+            Charm,
+            Blather,
 		}
 
 	}
