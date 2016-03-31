@@ -1,0 +1,8 @@
+{
+    "branchName": "EmeColten2",
+    "script": [
+		"/start_talk Colten",
+		"My day doesn't concern you.",
+		"/stop_talk"
+	]
+}

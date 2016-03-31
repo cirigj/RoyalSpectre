@@ -1,0 +1,16 @@
+{
+    "branchName": "Eme to Adin",
+    "script": [
+		"/start_talk Adin",
+		"Dinner is coming along nicely ma'am.",
+		"/wait",
+		"Will you be needing anything else from me?",
+		"/wait",
+		"/start_talk Emeline",
+		"No, that's all I'll have you working on for tonight.",
+		"/wait",
+		"/option \"Have you heard anything of interest today?\" 0",
+        "/option if flag LewinLover \"Have you heard about Lewin?\" 1",
+		"/option if !flag LewinLover \"Blather\" if stat Player Blather > 5 1 0"
+	]
+}

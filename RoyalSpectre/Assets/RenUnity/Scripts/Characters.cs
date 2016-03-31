@@ -32,6 +32,11 @@
             Player,
 			Example,
 			JohnCena,
+            Emeline,
+            Adin,
+            Colten,
+            Will,
+            Millie,
 		}
 
 	}
