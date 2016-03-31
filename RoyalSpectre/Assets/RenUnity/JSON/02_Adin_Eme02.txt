@@ -1,0 +1,18 @@
+{
+    "branchName": "02_Adin_Eme02",
+    "script": [
+        "/start_talk Emeline",
+        "Oh, well it could have gone better, deary. After seeing to the tables with Millie I sat down myself, only to have the merchant sit down across form me.",
+        "/wait",
+        "/start_talk Adin",
+        "Is there something wrong with him?",
+        "/wait",
+        "/start_talk Emeline",
+        "No, no. He's just a strange fellow, foreign. He does things differently. It makes me uneasy.",
+        "/wait",
+        "Truth be told, I wouldn't be surprised to learn he had something to do with the King.",
+        "/wait",
+        "/set_flag Merchant",
+        "/stop_talk"
+    ]
+}

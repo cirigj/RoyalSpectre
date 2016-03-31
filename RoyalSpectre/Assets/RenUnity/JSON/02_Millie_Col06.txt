@@ -1,0 +1,11 @@
+{
+    "branchName": "02_Millie_Col06",
+    "script": [
+        "/start_talk Colten",
+        "There wasn't much conversation today, honestly.",
+        "/wait",
+        "Will was giving us a heads up, he plans on calling us all, later. Something about the King's death.",
+        "/wait",
+        "/stop_talk"
+    ]
+}

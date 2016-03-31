@@ -6,6 +6,7 @@
         "/wait",
         "Will you be needing anything else from me?",
         "/wait",
+		"/option if flag KnifeRumor \"Apparently the King was killed with a fancy knife.\" 4",
         "/option if flag LewinLover \"Have you heard about Lewin?\" 1",
         "/option if !flag LewinLover \"Blather\" if stat Player Blather > 5 1 0",
         "/option if flag GuardRumor \"Millie tells me the guards know something more about the King.\" 3",

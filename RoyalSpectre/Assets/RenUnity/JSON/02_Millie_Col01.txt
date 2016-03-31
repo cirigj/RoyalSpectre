@@ -1,0 +1,13 @@
+{
+    "branchName": "02_Millie_Col01",
+    "script": [
+        "/start_talk Colten",
+        "Oh yes, that. Its not something I'm supposed to talk about.",
+        "/wait",
+        "I don't know the whole story myself. Will plans to tell me more later.",
+        "/wait",
+        "What he did say was that it has to do with how the King died. ",
+        "/wait",
+        "/stop_talk"
+    ]
+}
