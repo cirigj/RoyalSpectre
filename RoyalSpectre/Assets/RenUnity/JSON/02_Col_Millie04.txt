@@ -1,0 +1,10 @@
+{
+    "branchName": "02_Col_Millie04",
+    "script": [
+        "/start_talk Millie",
+        "Alright, as promised. I heard there's a certain kitchen worker that would love to have dinner with you tonight.",
+        "/wait",
+        "/set_stat Player Charm + 2",
+        "/stop_talk"
+    ]
+}

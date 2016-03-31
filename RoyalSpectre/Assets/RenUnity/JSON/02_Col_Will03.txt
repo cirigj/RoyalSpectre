@@ -1,0 +1,12 @@
+{
+    "branchName": "02_Col_Will03",
+    "script": [
+        "/start_talk Will",
+        "Alright, alright, I'll tell you now.",
+        "/wait",
+        "It's about the King. We had his wounds inspected, it was caused by th knife found in Kara's hands.",
+        "/set_flag KnifeRumor",
+        "/wait",
+        "/stop_talk"
+    ]
+}

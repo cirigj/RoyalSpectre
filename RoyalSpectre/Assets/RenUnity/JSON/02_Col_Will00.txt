@@ -1,0 +1,13 @@
+{
+    "branchName": "02_Col_Will00",
+    "script": [
+        "/start_talk Will",
+        "Something on your mind?",
+        "/wait",
+        "/option if flag GuardRumor \"I was wondering about what you mentioned earlier.\" 0",
+        "/option if !flag GuardRumor \"Deceive\" if stat Player Deceive > 3 0 1",
+        "/option \"Nevermind\"",
+        "",
+        ""
+    ]
+}
