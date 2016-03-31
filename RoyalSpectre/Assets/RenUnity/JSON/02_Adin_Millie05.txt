@@ -1,0 +1,15 @@
+{
+    "branchName": "02_Adin_Millie05",
+    "script": [
+        "/start_talk Millie",
+        "Sounds more like you made it up.",
+        "/wait",
+        "/set_stat Adin suspicion + 5",
+        "Still it does make some sense, I suppose it might be true.",
+        "/wait",
+        "You know I did hear that Lewin might have a consort hiding away somewhere, if its true and he has an heir, maybe it'll go as far as to oppose Aldin! How's that for imagining a story.",
+        "/wait",
+        "/set_flag LewinLover",
+        "/stop_talk"
+    ]
+}

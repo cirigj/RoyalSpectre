@@ -1,0 +1,11 @@
+{
+    "branchName": "02_Millie_Adin00",
+    "script": [
+        "/start_talk Adin",
+        "Hi Millie, welcome back.",
+        "/wait",
+        "/option if flag KnifeRumor \"Adin, I heard about something that might interest you\" 0",
+        "/option if flag GuardRumor \"I heard the guards were talking a lot during lunch, any idea what it might all be about?\" 1",
+        "/option \"How was work without us?\" 2"
+    ]
+}

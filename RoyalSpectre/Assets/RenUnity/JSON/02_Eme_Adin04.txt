@@ -1,0 +1,13 @@
+{
+    "branchName": "02_Eme_Adin04",
+    "script": [
+        "/start_talk Adin",
+        "I heard the captain telling Colten they'd talk later",
+        "/wait",
+        "That must'a been what he meant",
+        "/wait",
+        "I doubt they'd tell us though.",
+        "/wait",
+        "/stop_talk"
+    ]
+}

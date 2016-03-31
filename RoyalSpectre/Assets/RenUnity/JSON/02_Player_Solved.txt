@@ -1,0 +1,9 @@
+{
+    "branchName": "02_Player_Solved",
+    "script": [
+        "/start_talk Player",
+        "Now that I know what the knife looks like, maybe I can track down who really owned it.",
+        "/wait",
+        "/stop_talk"
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "branchName": "02_Adin_Millie06",
+    "script": [
+        "/start_talk Millie",
+        "Really? Emeline thinks that?",
+        "/wait",
+        "He didn't seem suspicious at lunch. Then again no one does know too much about him, and he's been more successful since Prince Aldin has taken the throne.",
+        "/wait",
+        "I did hear the guards talking about having proof that it was Kara though, so it couldn't have been him.",
+        "/wait",
+        "/set_flag GuardRumor",
+        "/stop_talk"
+    ]
+}

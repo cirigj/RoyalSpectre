@@ -1,9 +1,0 @@
-{
-    "branchName": "Eme to Colten",
-    "script": [
-        "/start_talk Colten",
-        "What is it cook?",
-        "/option \"How was your day?\" 0",
-        "/option \"Must you be so rude?\" 1"
-    ]
-}

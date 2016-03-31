@@ -1,0 +1,9 @@
+{
+    "branchName": "02_Millie_Will00",
+    "script": [
+        "/start_talk Will",
+        "Millie. I hope you don't plan to distract myself or Colten today. He can't spend all his time chatting with you.",
+        "/wait",
+        "/stop_talk"
+    ]
+}

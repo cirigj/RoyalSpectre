@@ -1,0 +1,12 @@
+{
+    "branchName": "02_Eme_Millie01",
+    "script": [
+        "/set_flag MillieLunch",
+        "/start_talk Millie",
+        "It was wonderful, there was quite a bit of interesting talk from m'lords.",
+        "/wait",
+        " I'd like to serve tables again if possible.",
+        "/wait",
+        "/stop_talk"
+    ]
+}

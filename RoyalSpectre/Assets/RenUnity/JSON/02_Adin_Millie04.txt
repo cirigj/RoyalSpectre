@@ -1,0 +1,11 @@
+{
+    "branchName": "02_Adin_Millie04",
+    "script": [
+        "/start_talk Millie",
+        "\"That would make sense, you'd think more guards would be smart after something like that happened in the King's chambers.",
+        "/wait",
+        "Well, based on what I heard, the guard is at least picking up the slack. It sounded like they had evidence against Kara.",
+        "/set_flag GuardRumor",
+        "/stop_talk"
+    ]
+}

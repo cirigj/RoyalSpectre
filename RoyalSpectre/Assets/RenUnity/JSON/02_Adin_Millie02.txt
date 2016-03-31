@@ -1,0 +1,12 @@
+{
+    "branchName": "02_Adin_Millie02",
+    "script": [
+        "/start_talk Millie",
+        "It was so fun! You hear so much more out in the great hall.",
+        "/wait",
+        "It's no wonder Emeline usually has so many rumors",
+        "/wait",
+        "/option \"Did you catch any yourself?\" 0",
+        "/option \"Do you think she's heard any new ones?\" 1"
+    ]
+}

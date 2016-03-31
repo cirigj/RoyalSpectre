@@ -1,0 +1,9 @@
+{
+    "branchName": "02_Eme_Will01",
+    "script": [
+        "/start_talk Will",
+        "Don't waste my time with your gossip, Emeline.",
+        "/wait",
+        "/stop_talk"
+    ]
+}

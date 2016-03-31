@@ -1,0 +1,15 @@
+{
+    "branchName": "02_Eme_Adin05",
+    "script": [
+        "/start_talk Emeline",
+        "I figured that might interest you.",
+        "/wait",
+        "/start_talk Adin",
+        "That certainly narrows things down. There aren't many knifes in this castle you could call fancy.",
+        "/wait",
+        "The only one that stands out is the Emerald cutlass, but that kept popping up awhile ago. I have no idea who ended up with it though.",
+        "/wait",
+        "/set_flag Puzzle2Fin",
+        "/jump + 0"
+    ]
+}

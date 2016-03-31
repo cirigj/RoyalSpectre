@@ -1,0 +1,10 @@
+{
+    "branchName": "02_Millie_Col05",
+    "script": [
+        "/start_talk Colten",
+        "I look forward to it.",
+        "/wait",
+        "/set_stat Player Charm +1",
+        "/stop_talk"
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "branchName": "02_Eme_Adin02",
+    "script": [
+        "/start_talk Adin",
+        "/set_flag DinnerChecked",
+        "/set_stat Emeline Suspicion -5",
+        "Everything is coming along, I was able to handle things well enough myself while Millie served.",
+        "/wait",
+        "/stop_talk"
+    ]
+}

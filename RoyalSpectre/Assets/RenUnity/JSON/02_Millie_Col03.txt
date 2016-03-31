@@ -1,0 +1,11 @@
+{
+    "branchName": "02_Millie_Col03",
+    "script": [
+        "/start_talk Colten",
+        "Next time, then. Please do join us and talk.",
+        "/wait",
+        "/option \"How about you fill me in?\" 0",
+        "/option \"I'd like that. For sure next time.\" 1",
+        "/option \"I'll be sure to. I'll bet your conversations are much nicer than in the kitchens.\" 2"
+    ]
+}

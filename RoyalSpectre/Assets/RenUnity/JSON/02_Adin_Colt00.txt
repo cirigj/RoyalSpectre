@@ -1,0 +1,9 @@
+{
+    "branchName": "02_Adin_Colt00",
+    "script": [
+        "/start_talk Colten",
+        "Mind your work, squirt.",
+        "/wait",
+        "/stop_talk"
+    ]
+}

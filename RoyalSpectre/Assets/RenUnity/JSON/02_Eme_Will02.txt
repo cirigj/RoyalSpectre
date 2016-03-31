@@ -1,0 +1,10 @@
+{
+    "branchName": "02_Eme_Will02",
+    "script": [
+        "/start_talk Will",
+        "What do you want Emeline?",
+        "/wait",
+        "/option \"I hear you can prove Kara's guilty?\" 0",
+        "/option \"Nevermind.\" 1"
+    ]
+}

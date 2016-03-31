@@ -1,0 +1,15 @@
+{
+    "branchName": "02_Millie_Eme00",
+    "script": [
+        "/start_talk Emeline",
+        "Oh Millie,  good work today serving tables, it really helped me out.",
+        "/wait",
+        "I'm a bit suprised though. You had a chance to spend time with young Colten, but you didn't let up even to get yourself something to eat.",
+        "/wait",
+        "I'm sure he'd have loved to sit with you.",
+        "/wait",
+        "I'd love to chat more, but I must make sure Adin took care of everything right for dinner.",
+        "/wait",
+        "/stop_talk"
+    ]
+}

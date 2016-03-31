@@ -1,0 +1,13 @@
+{
+    "branchName": "02_Col_Millie01",
+    "script": [
+		"/start_talk Millie",
+		"Sorry Colt, you know the rules, nothing offered nothing gained.",
+		"/wait",
+		"So what can you tell me?",
+		"/wait",
+		"/option if flag KnifeRumor \"Cap'n told me he saw the knife that killed the king, real ornate piece'a work.\" 2",
+		"/option if !flag KnifeRumor \"Persuade\" if stat Player Persuade > 5 2 3",
+		"/option \"Sorry, nothing I can say.\" 1"
+	]
+}

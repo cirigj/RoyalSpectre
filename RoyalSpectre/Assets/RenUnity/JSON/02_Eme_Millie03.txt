@@ -1,0 +1,12 @@
+{
+    "branchName": "02_Eme_Millie03",
+    "script": [
+        "/start_talk Millie",
+        "I overheard it while pouring drinks,",
+        "/wait",
+        "that merchant was poking fun at Lewin, claiming the Lord Regent must have a consort",
+        "/wait",
+        "/set_stat Emeline Suspicion -10",
+        "/stop_talk"
+    ]
+}
