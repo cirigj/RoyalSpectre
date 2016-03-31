@@ -1,11 +1,11 @@
 {
     "branchName": "02_Col_Millie02",
     "script": [
-		"start_talk Millie",
-		"Well in that case, guards dinner will be ready in an hour.",
-		"/wait",
-		"Let me know if you learn anything fun.",
-		"/wait",
-		"/stop_talk"
-	]
+        "/start_talk Millie",
+        "Well in that case, guards dinner will be ready in an hour.",
+        "/wait",
+        "Let me know if you learn anything fun.",
+        "/wait",
+        "/stop_talk"
+    ]
 }

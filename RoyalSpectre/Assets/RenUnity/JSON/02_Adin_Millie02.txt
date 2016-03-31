@@ -1,7 +1,7 @@
 {
     "branchName": "02_Adin_Millie02",
     "script": [
-        "/star_talk Millie",
+        "/start_talk Millie",
         "It was so fun! You hear so much more out in the great hall.",
         "/wait",
         "It's no wonder Emeline usually has so many rumors",
