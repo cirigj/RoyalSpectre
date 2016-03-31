@@ -1,0 +1,6 @@
+Controls
+
+WASD - move
+T - Talk (when you are possessing someone and next to another person)
+SPACE - possess adjacent body (can go from one body right into another, if there are no bodies in range, you will turn into a ghost)
+M - go back to main menu
