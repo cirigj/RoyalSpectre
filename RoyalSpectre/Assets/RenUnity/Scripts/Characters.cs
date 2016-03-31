@@ -30,12 +30,14 @@
 		public enum Character {
 			InvalidName = 0,
             Player,
-			Example,
-			JohnCena,
+			Stefano,//goaler 
+			Allen,//worker
+			Marc,//guard for puzzle1
+			Lewin, //brother of deceased king
             Emeline,
             Adin,
-            Colten,
-            Will,
+            Colten,//guard
+            Will,//captain
             Millie,
 		}
 

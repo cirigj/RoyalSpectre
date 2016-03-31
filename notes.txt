@@ -1,0 +1,39 @@
+every time you make new character, update charfcater list
+renunity is where verything is updated chump
+then create another inspector with one being for what you're actively looking at
+use add jump branch to create new branches and trhen double click on it to do it
+
+name the  puzzle#_possesse_conversant_order#
+		01_Marc_Stef_00
+save as asset
+drag asset into branch name within RenUnity object
+then remove the jump nbranch
+jumpbranches indicate the diff brsanches or options from the 
+
+for characters on the hierarchy
+increaee size to # of people they can talk
+then 
+charcater: who am i talking to
+branch: the branch to go to
+
+characters for puzzle1:
+Stefano,//goaler 
+Allen,//worker
+Marc,//guard for puzzle1
+Lewin, //brother of deceased king
+Colten,//guard
+Will,//captain
+
+player options:
+blather 
+decieve 
+persuade
+charm
+
+in sourcetree"
+go to working copy
+in the unstaged files ctrlA
+ctrl click SBO.asset thing
+then right click not on that and hit add
+tyrp a commit message
+then hit commit 

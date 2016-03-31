@@ -1,0 +1,26 @@
+{
+    "branchName": "01_Marc_Stef_charm",
+    "script": [
+
+    "/start_talk Marc"
+    "It's just that ever since your brother has gone to jail, you haven't been like you used to be",
+    "/wait",
+    "You seem alot more uptight these days -",
+    "/wait",
+    "/start_talk Stefano",
+    "Remember who you are talking to boy."
+    "/wait",
+    "/start_talk Marc",
+    "Sir, this comes from a place of concern - not a place of disrespect or disregard to your authority"
+    "/wait",
+    "/start_talk Stefano",
+    "I understand. Alright Stefano, your loyalty has earned my trust over the years. However I'll need you to keep this secret. Do you understand?"
+    "/wait",
+    "/start_talk Marc",
+    "Why yes I do. Tell me - what's going on?"
+    "/start_talk Stefano",
+    "/jump + 4"
+
+
+    ]
+}
