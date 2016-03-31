@@ -12,6 +12,248 @@ MonoBehaviour:
   m_Name: RoyalSpectreSBO
   m_EditorClassIdentifier: 
   entries:
+  - thisBranch: {fileID: 11400000, guid: fe9e60d618b2bcc4889a104d3ae1327e, type: 2}
+    parentBranch: {fileID: 0}
+    jumpList:
+    - {fileID: 11400000, guid: c95313b1292db2645ad2a7af715c9339, type: 2}
+    - {fileID: 11400000, guid: a27b917dd79086949a98865b321e75fd, type: 2}
+    - {fileID: 11400000, guid: 7f6831268ddaa3f48bfb22e92b2b424d, type: 2}
+    - {fileID: 11400000, guid: cad2c27888a7d2041a26cabf0554910d, type: 2}
+    - {fileID: 11400000, guid: de04c2d93a4efb54a84985f80770e5e1, type: 2}
+  - thisBranch: {fileID: 11400000, guid: c95313b1292db2645ad2a7af715c9339, type: 2}
+    parentBranch: {fileID: 11400000, guid: fe9e60d618b2bcc4889a104d3ae1327e, type: 2}
+    jumpList: []
+  - thisBranch: {fileID: 11400000, guid: 091179f27325b214cb8a89e2e2f71caa, type: 2}
+    parentBranch: {fileID: 0}
+    jumpList:
+    - {fileID: 11400000, guid: 4f7a1f8a3a453774a8612390ba4d421d, type: 2}
+    - {fileID: 11400000, guid: 2e3c0386944d1cd40a002de5ac798f06, type: 2}
+  - thisBranch: {fileID: 11400000, guid: b52f8a4f1595b2544a2eac814eed00e4, type: 2}
+    parentBranch: {fileID: 0}
+    jumpList:
+    - {fileID: 11400000, guid: 32ac467fa8c8b524da753a20e13a1457, type: 2}
+    - {fileID: 11400000, guid: 63309b2a0417d484bbf7a714a62002f8, type: 2}
+    - {fileID: 11400000, guid: 1f6ad9aa6f3a3eb459c6a0d9df769434, type: 2}
+    - {fileID: 11400000, guid: 091cc33ee51ceca43be27dd9150c7e56, type: 2}
+  - thisBranch: {fileID: 11400000, guid: 32ac467fa8c8b524da753a20e13a1457, type: 2}
+    parentBranch: {fileID: 11400000, guid: b52f8a4f1595b2544a2eac814eed00e4, type: 2}
+    jumpList: []
+  - thisBranch: {fileID: 11400000, guid: 63309b2a0417d484bbf7a714a62002f8, type: 2}
+    parentBranch: {fileID: 11400000, guid: b52f8a4f1595b2544a2eac814eed00e4, type: 2}
+    jumpList: []
+  - thisBranch: {fileID: 11400000, guid: 1f6ad9aa6f3a3eb459c6a0d9df769434, type: 2}
+    parentBranch: {fileID: 11400000, guid: b52f8a4f1595b2544a2eac814eed00e4, type: 2}
+    jumpList: []
+  - thisBranch: {fileID: 11400000, guid: 7f6831268ddaa3f48bfb22e92b2b424d, type: 2}
+    parentBranch: {fileID: 11400000, guid: fe9e60d618b2bcc4889a104d3ae1327e, type: 2}
+    jumpList: []
+  - thisBranch: {fileID: 11400000, guid: a27b917dd79086949a98865b321e75fd, type: 2}
+    parentBranch: {fileID: 11400000, guid: fe9e60d618b2bcc4889a104d3ae1327e, type: 2}
+    jumpList: []
+  - thisBranch: {fileID: 11400000, guid: 41197fb891280024db76291b6dcf87bd, type: 2}
+    parentBranch: {fileID: 0}
+    jumpList:
+    - {fileID: 11400000, guid: 849d012cd9ae70244a5b11ac2a4e97e4, type: 2}
+    - {fileID: 11400000, guid: 5d3c93dd02f800447b9c35d46b080ac6, type: 2}
+    - {fileID: 11400000, guid: 2dd90ff94ab7af54e93485e0c44a51c8, type: 2}
+  - thisBranch: {fileID: 11400000, guid: 4f7a1f8a3a453774a8612390ba4d421d, type: 2}
+    parentBranch: {fileID: 11400000, guid: 2e3c0386944d1cd40a002de5ac798f06, type: 2}
+    jumpList: []
+  - thisBranch: {fileID: 11400000, guid: 2e3c0386944d1cd40a002de5ac798f06, type: 2}
+    parentBranch: {fileID: 11400000, guid: 091179f27325b214cb8a89e2e2f71caa, type: 2}
+    jumpList:
+    - {fileID: 11400000, guid: 988a42c0c6fd32b4d8886c187d29db13, type: 2}
+    - {fileID: 11400000, guid: 4f7a1f8a3a453774a8612390ba4d421d, type: 2}
+  - thisBranch: {fileID: 11400000, guid: 849d012cd9ae70244a5b11ac2a4e97e4, type: 2}
+    parentBranch: {fileID: 11400000, guid: 41197fb891280024db76291b6dcf87bd, type: 2}
+    jumpList: []
+  - thisBranch: {fileID: 11400000, guid: 5d3c93dd02f800447b9c35d46b080ac6, type: 2}
+    parentBranch: {fileID: 11400000, guid: 41197fb891280024db76291b6dcf87bd, type: 2}
+    jumpList: []
+  - thisBranch: {fileID: 11400000, guid: 988a42c0c6fd32b4d8886c187d29db13, type: 2}
+    parentBranch: {fileID: 11400000, guid: 2e3c0386944d1cd40a002de5ac798f06, type: 2}
+    jumpList: []
+  - thisBranch: {fileID: 11400000, guid: 091cc33ee51ceca43be27dd9150c7e56, type: 2}
+    parentBranch: {fileID: 11400000, guid: b52f8a4f1595b2544a2eac814eed00e4, type: 2}
+    jumpList: []
+  - thisBranch: {fileID: 11400000, guid: cad2c27888a7d2041a26cabf0554910d, type: 2}
+    parentBranch: {fileID: 11400000, guid: fe9e60d618b2bcc4889a104d3ae1327e, type: 2}
+    jumpList: []
+  - thisBranch: {fileID: 11400000, guid: 2dd90ff94ab7af54e93485e0c44a51c8, type: 2}
+    parentBranch: {fileID: 11400000, guid: 41197fb891280024db76291b6dcf87bd, type: 2}
+    jumpList: []
+  - thisBranch: {fileID: 11400000, guid: 2e79dad9b6a1eb64080ebe619592bd31, type: 2}
+    parentBranch: {fileID: 0}
+    jumpList: []
+  - thisBranch: {fileID: 11400000, guid: 22841d9261cf80a4ab119b3558f41160, type: 2}
+    parentBranch: {fileID: 0}
+    jumpList:
+    - {fileID: 11400000, guid: 5650a984c55feb644b460258aa78bd6e, type: 2}
+    - {fileID: 11400000, guid: 68ce17e8ab9c59b40b1100de10ac5c72, type: 2}
+  - thisBranch: {fileID: 11400000, guid: 5650a984c55feb644b460258aa78bd6e, type: 2}
+    parentBranch: {fileID: 11400000, guid: 22841d9261cf80a4ab119b3558f41160, type: 2}
+    jumpList:
+    - {fileID: 11400000, guid: 68ce17e8ab9c59b40b1100de10ac5c72, type: 2}
+    - {fileID: 11400000, guid: 9ea9b8445c5d8ab4fb2ea3e8f72d70b3, type: 2}
+  - thisBranch: {fileID: 11400000, guid: 68ce17e8ab9c59b40b1100de10ac5c72, type: 2}
+    parentBranch: {fileID: 11400000, guid: 22841d9261cf80a4ab119b3558f41160, type: 2}
+    jumpList: []
+  - thisBranch: {fileID: 11400000, guid: 9ea9b8445c5d8ab4fb2ea3e8f72d70b3, type: 2}
+    parentBranch: {fileID: 11400000, guid: 5650a984c55feb644b460258aa78bd6e, type: 2}
+    jumpList:
+    - {fileID: 11400000, guid: f821046eb3686d24eaf11900b61bea9b, type: 2}
+    - {fileID: 11400000, guid: 106f1da5bd9cbbb46b676ede01eeb645, type: 2}
+  - thisBranch: {fileID: 11400000, guid: f821046eb3686d24eaf11900b61bea9b, type: 2}
+    parentBranch: {fileID: 11400000, guid: 9ea9b8445c5d8ab4fb2ea3e8f72d70b3, type: 2}
+    jumpList: []
+  - thisBranch: {fileID: 11400000, guid: 106f1da5bd9cbbb46b676ede01eeb645, type: 2}
+    parentBranch: {fileID: 11400000, guid: 9ea9b8445c5d8ab4fb2ea3e8f72d70b3, type: 2}
+    jumpList: []
+  - thisBranch: {fileID: 11400000, guid: 153b07ca5200e254d9aa024778406b2c, type: 2}
+    parentBranch: {fileID: 0}
+    jumpList: []
+  - thisBranch: {fileID: 11400000, guid: ba865af2a444ddd41948a3b1c5749ca0, type: 2}
+    parentBranch: {fileID: 0}
+    jumpList:
+    - {fileID: 11400000, guid: d68c353f8e0ba5544a9b0d8b3160bd21, type: 2}
+    - {fileID: 11400000, guid: a463884beec1c0c4582d5278d3631dd0, type: 2}
+  - thisBranch: {fileID: 11400000, guid: d68c353f8e0ba5544a9b0d8b3160bd21, type: 2}
+    parentBranch: {fileID: 0}
+    jumpList:
+    - {fileID: 11400000, guid: 7f63f19be6a202646af9a9f75a9278de, type: 2}
+    - {fileID: 11400000, guid: c2f01aca9af76b04890afd00c2c8416b, type: 2}
+  - thisBranch: {fileID: 11400000, guid: 7f63f19be6a202646af9a9f75a9278de, type: 2}
+    parentBranch: {fileID: 11400000, guid: d68c353f8e0ba5544a9b0d8b3160bd21, type: 2}
+    jumpList: []
+  - thisBranch: {fileID: 11400000, guid: c2f01aca9af76b04890afd00c2c8416b, type: 2}
+    parentBranch: {fileID: 11400000, guid: d68c353f8e0ba5544a9b0d8b3160bd21, type: 2}
+    jumpList: []
+  - thisBranch: {fileID: 11400000, guid: a463884beec1c0c4582d5278d3631dd0, type: 2}
+    parentBranch: {fileID: 11400000, guid: ba865af2a444ddd41948a3b1c5749ca0, type: 2}
+    jumpList: []
+  - thisBranch: {fileID: 11400000, guid: 3fbfc319a59f48940bf37fe231627f80, type: 2}
+    parentBranch: {fileID: 0}
+    jumpList:
+    - {fileID: 11400000, guid: c369dda255c61694784ddb37a1bcc3a5, type: 2}
+    - {fileID: 11400000, guid: 2c77a2f3e831a464d8a8a2a4aabe18ea, type: 2}
+  - thisBranch: {fileID: 11400000, guid: c369dda255c61694784ddb37a1bcc3a5, type: 2}
+    parentBranch: {fileID: 11400000, guid: 3fbfc319a59f48940bf37fe231627f80, type: 2}
+    jumpList: []
+  - thisBranch: {fileID: 11400000, guid: 2c77a2f3e831a464d8a8a2a4aabe18ea, type: 2}
+    parentBranch: {fileID: 11400000, guid: 3fbfc319a59f48940bf37fe231627f80, type: 2}
+    jumpList:
+    - {fileID: 11400000, guid: bfcc0d52f1d2c37479942e62855c9bf7, type: 2}
+  - thisBranch: {fileID: 11400000, guid: bfcc0d52f1d2c37479942e62855c9bf7, type: 2}
+    parentBranch: {fileID: 11400000, guid: 2c77a2f3e831a464d8a8a2a4aabe18ea, type: 2}
+    jumpList:
+    - {fileID: 11400000, guid: 31bc7acd8cc55ba45af52899f7dd60df, type: 2}
+    - {fileID: 11400000, guid: 9bdcf18843883dd41b2271cc57358116, type: 2}
+    - {fileID: 11400000, guid: fc268c1a5acbd2543b962cace1c2288a, type: 2}
+    - {fileID: 11400000, guid: 8fb5fa2d15de81a48a1e212d90786be3, type: 2}
+    - {fileID: 11400000, guid: 953b7952c42010c4397249d5ea68b686, type: 2}
+  - thisBranch: {fileID: 11400000, guid: 31bc7acd8cc55ba45af52899f7dd60df, type: 2}
+    parentBranch: {fileID: 11400000, guid: bfcc0d52f1d2c37479942e62855c9bf7, type: 2}
+    jumpList: []
+  - thisBranch: {fileID: 11400000, guid: 9bdcf18843883dd41b2271cc57358116, type: 2}
+    parentBranch: {fileID: 11400000, guid: bfcc0d52f1d2c37479942e62855c9bf7, type: 2}
+    jumpList: []
+  - thisBranch: {fileID: 11400000, guid: fc268c1a5acbd2543b962cace1c2288a, type: 2}
+    parentBranch: {fileID: 11400000, guid: bfcc0d52f1d2c37479942e62855c9bf7, type: 2}
+    jumpList: []
+  - thisBranch: {fileID: 11400000, guid: 8fb5fa2d15de81a48a1e212d90786be3, type: 2}
+    parentBranch: {fileID: 11400000, guid: bfcc0d52f1d2c37479942e62855c9bf7, type: 2}
+    jumpList: []
+  - thisBranch: {fileID: 11400000, guid: 953b7952c42010c4397249d5ea68b686, type: 2}
+    parentBranch: {fileID: 11400000, guid: bfcc0d52f1d2c37479942e62855c9bf7, type: 2}
+    jumpList: []
+  - thisBranch: {fileID: 11400000, guid: 3caf6d081b4c0e84ca2a59a5a91fdaaa, type: 2}
+    parentBranch: {fileID: 0}
+    jumpList:
+    - {fileID: 11400000, guid: 8dc9d9ba32189064887a39c5f5f8e810, type: 2}
+    - {fileID: 11400000, guid: 564270ad158f996409f3d1eab2e40023, type: 2}
+    - {fileID: 11400000, guid: e4fe387c40dfe6b4b904d71996885a14, type: 2}
+  - thisBranch: {fileID: 11400000, guid: 8dc9d9ba32189064887a39c5f5f8e810, type: 2}
+    parentBranch: {fileID: 11400000, guid: 3caf6d081b4c0e84ca2a59a5a91fdaaa, type: 2}
+    jumpList: []
+  - thisBranch: {fileID: 11400000, guid: 564270ad158f996409f3d1eab2e40023, type: 2}
+    parentBranch: {fileID: 11400000, guid: 3caf6d081b4c0e84ca2a59a5a91fdaaa, type: 2}
+    jumpList: []
+  - thisBranch: {fileID: 11400000, guid: e4fe387c40dfe6b4b904d71996885a14, type: 2}
+    parentBranch: {fileID: 11400000, guid: 3caf6d081b4c0e84ca2a59a5a91fdaaa, type: 2}
+    jumpList: []
+  - thisBranch: {fileID: 11400000, guid: 98b675fa454bd15419fea46cb1b212d2, type: 2}
+    parentBranch: {fileID: 0}
+    jumpList: []
+  - thisBranch: {fileID: 11400000, guid: 5be603981594e21478ee6ed363649be0, type: 2}
+    parentBranch: {fileID: 0}
+    jumpList:
+    - {fileID: 11400000, guid: 0009fd67f6cd58b45b0401118f3abafd, type: 2}
+    - {fileID: 11400000, guid: 8fb73cf46fcd6fd40a7e6b1ec20edc5f, type: 2}
+  - thisBranch: {fileID: 11400000, guid: 0009fd67f6cd58b45b0401118f3abafd, type: 2}
+    parentBranch: {fileID: 11400000, guid: 5be603981594e21478ee6ed363649be0, type: 2}
+    jumpList: []
+  - thisBranch: {fileID: 11400000, guid: 8fb73cf46fcd6fd40a7e6b1ec20edc5f, type: 2}
+    parentBranch: {fileID: 11400000, guid: 5be603981594e21478ee6ed363649be0, type: 2}
+    jumpList: []
+  - thisBranch: {fileID: 11400000, guid: 51f09062f20f25d45aa97ee68f5b8d83, type: 2}
+    parentBranch: {fileID: 0}
+    jumpList: []
+  - thisBranch: {fileID: 11400000, guid: 65a71456d6443a54ba38fb03a9ffc62f, type: 2}
+    parentBranch: {fileID: 0}
+    jumpList:
+    - {fileID: 11400000, guid: ab03599d0f1f18d46972b655fa2dfe7f, type: 2}
+    - {fileID: 11400000, guid: 314880c53ca68704da50826b5517927a, type: 2}
+    - {fileID: 11400000, guid: 099b9ca056b5d154e91e39e869e45aed, type: 2}
+  - thisBranch: {fileID: 11400000, guid: ab03599d0f1f18d46972b655fa2dfe7f, type: 2}
+    parentBranch: {fileID: 11400000, guid: 65a71456d6443a54ba38fb03a9ffc62f, type: 2}
+    jumpList:
+    - {fileID: 11400000, guid: b9401fdcb312c2d448523a042fbb73b4, type: 2}
+  - thisBranch: {fileID: 11400000, guid: 314880c53ca68704da50826b5517927a, type: 2}
+    parentBranch: {fileID: 11400000, guid: 65a71456d6443a54ba38fb03a9ffc62f, type: 2}
+    jumpList: []
+  - thisBranch: {fileID: 11400000, guid: 099b9ca056b5d154e91e39e869e45aed, type: 2}
+    parentBranch: {fileID: 11400000, guid: 65a71456d6443a54ba38fb03a9ffc62f, type: 2}
+    jumpList: []
+  - thisBranch: {fileID: 11400000, guid: b9401fdcb312c2d448523a042fbb73b4, type: 2}
+    parentBranch: {fileID: 11400000, guid: ab03599d0f1f18d46972b655fa2dfe7f, type: 2}
+    jumpList: []
+  - thisBranch: {fileID: 11400000, guid: 9031b78195415d744a29e152d476e5d3, type: 2}
+    parentBranch: {fileID: 0}
+    jumpList: []
+  - thisBranch: {fileID: 11400000, guid: 227d97cfd28785841850aaaff12b99b0, type: 2}
+    parentBranch: {fileID: 0}
+    jumpList:
+    - {fileID: 11400000, guid: be5cf961a869cd74fad82c5f3fd7d5f9, type: 2}
+    - {fileID: 11400000, guid: 7fbd956eb4256424ca8c57e9fdbfdb46, type: 2}
+    - {fileID: 11400000, guid: f057d3845a8c9a9418fe1d392647b794, type: 2}
+  - thisBranch: {fileID: 11400000, guid: be5cf961a869cd74fad82c5f3fd7d5f9, type: 2}
+    parentBranch: {fileID: 11400000, guid: 227d97cfd28785841850aaaff12b99b0, type: 2}
+    jumpList: []
+  - thisBranch: {fileID: 11400000, guid: 7fbd956eb4256424ca8c57e9fdbfdb46, type: 2}
+    parentBranch: {fileID: 11400000, guid: 227d97cfd28785841850aaaff12b99b0, type: 2}
+    jumpList: []
+  - thisBranch: {fileID: 11400000, guid: f057d3845a8c9a9418fe1d392647b794, type: 2}
+    parentBranch: {fileID: 11400000, guid: 227d97cfd28785841850aaaff12b99b0, type: 2}
+    jumpList:
+    - {fileID: 11400000, guid: fd2f164106017fc4c9a8a90ab94d8e35, type: 2}
+    - {fileID: 11400000, guid: 1b1eff1e004000d43a3b98b32f8eba3e, type: 2}
+    - {fileID: 11400000, guid: 2bc43addaab531f4c8f39e385d61366d, type: 2}
+  - thisBranch: {fileID: 11400000, guid: fd2f164106017fc4c9a8a90ab94d8e35, type: 2}
+    parentBranch: {fileID: 11400000, guid: f057d3845a8c9a9418fe1d392647b794, type: 2}
+    jumpList: []
+  - thisBranch: {fileID: 11400000, guid: 1b1eff1e004000d43a3b98b32f8eba3e, type: 2}
+    parentBranch: {fileID: 11400000, guid: f057d3845a8c9a9418fe1d392647b794, type: 2}
+    jumpList: []
+  - thisBranch: {fileID: 11400000, guid: 2bc43addaab531f4c8f39e385d61366d, type: 2}
+    parentBranch: {fileID: 11400000, guid: f057d3845a8c9a9418fe1d392647b794, type: 2}
+    jumpList: []
+  - thisBranch: {fileID: 0}
+    parentBranch: {fileID: 0}
+    jumpList: []
+  - thisBranch: {fileID: 11400000, guid: de04c2d93a4efb54a84985f80770e5e1, type: 2}
+    parentBranch: {fileID: 11400000, guid: fe9e60d618b2bcc4889a104d3ae1327e, type: 2}
+    jumpList:
+    - {fileID: 11400000, guid: b9401fdcb312c2d448523a042fbb73b4, type: 2}
   - thisBranch: {fileID: 11400000, guid: 3467e0911e9c51242ab5454d2a01ed10, type: 2}
     parentBranch: {fileID: 0}
     jumpList:
