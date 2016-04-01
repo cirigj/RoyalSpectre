@@ -2049,7 +2049,7 @@ MonoBehaviour:
       value: 0
     - stat: 6
       value: 0
-  writeSpeed: 0.1
+  writeSpeed: 0.05
   messageBoxPrefab: {fileID: 11497064, guid: 0d820cdc259176542bda12a3d7480752, type: 2}
   uiCanvas: {fileID: 1769671083}
 --- !u!4 &1505949827
