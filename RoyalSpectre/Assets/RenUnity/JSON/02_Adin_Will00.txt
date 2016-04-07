@@ -1,0 +1,10 @@
+{
+    "branchName": "02_Adin_Will00",
+    "script": [
+        "/start_talk Will",
+        "If you don't have something important, don't waste my time.",
+        "/wait",
+        "/option \"Sorry, sir.\" 0",
+        "/option if flag NewStaff \"I heard Lewin was planning on recruiting.\" 1"
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "branchName": "02_Adin_Millie01",
+    "script": [
+        "/start_talk Millie",
+        "Oh was it about the King? I heard some guards at lunch talking about it.",
+        "/wait",
+        "It sounded like they knew for sure it was Kara.",
+        "/wait",
+        "I didn't manage to hear anything more though.",
+        "/stop_talk"
+    ]
+}

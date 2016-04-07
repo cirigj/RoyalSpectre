@@ -172,7 +172,7 @@ public class Person : InteractableObject {
 			Control (col.gameObject.GetComponent<Person> ());
 		}
 		//for talking to other people
-		if (Input.GetKeyDown (KeyCode.T) && col.gameObject.GetComponent<Person>() != null) {
+		if (!DialogueParser.isParsing && player && Input.GetKeyDown (KeyCode.T) && col.gameObject.GetComponent<Person>() != null) {
 			col.gameObject.GetComponent<Person>().Talk (character);
 		}
 	}

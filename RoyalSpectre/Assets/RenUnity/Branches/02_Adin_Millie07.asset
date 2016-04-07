@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da4f42e8f27847b4a9dfebe8af81667a, type: 3}
+  m_Name: 02_Adin_Millie07
+  m_EditorClassIdentifier: 
+  cachedIndex: -1
+  branch:
+    branchName: 02_Adin_Millie07
+    script:
+    - /start_talk Millie
+    - Well maybe you'd start hearing more rumors if you talked to more people, instead
+      of trying to leave for the smithy all the time.
+    - /wait
+    - Alright, I'll pity you. I heard the guards whispering a bunch. Didn't want no
+      one to overhear, but I could hear something bout the King's death, I bet they
+      know something.
+    - /wait
+    - /set_flag GuardRumor
+    - /stop_talk

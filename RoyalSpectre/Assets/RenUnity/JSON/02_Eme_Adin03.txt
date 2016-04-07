@@ -1,0 +1,10 @@
+{
+    "branchName": "02_Eme_Adin03",
+    "script": [
+        "/start_talk Adin",
+        "/set_flag LewinLover",
+        "Oh yeah, I remember Mollie mentioning that about Lewin.",
+        "/wait",
+        "Something about him having a lover he's been seeing."
+    ]
+}

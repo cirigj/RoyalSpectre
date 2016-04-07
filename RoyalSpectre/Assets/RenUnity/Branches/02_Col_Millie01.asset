@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da4f42e8f27847b4a9dfebe8af81667a, type: 3}
+  m_Name: 02_Col_Millie01
+  m_EditorClassIdentifier: 
+  cachedIndex: -1
+  branch:
+    branchName: 02_Col_Millie01
+    script:
+    - /start_talk Millie
+    - Sorry Colt, you know the rules, nothing offered nothing gained.
+    - /wait
+    - So what can you tell me?
+    - /wait
+    - /option if flag KnifeRumor "Cap'n told me he saw the knife that killed the king,
+      real ornate piece'a work." 1
+    - /option if !flag KnifeRumor "Persuade" if stat Player Persuade > 5 1 2
+    - /option "Sorry, nothing I can say." 0

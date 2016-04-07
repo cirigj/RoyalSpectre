@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da4f42e8f27847b4a9dfebe8af81667a, type: 3}
+  m_Name: 02_Eme_Adin00
+  m_EditorClassIdentifier: 
+  cachedIndex: 0
+  branch:
+    branchName: 02_Eme_Adin00
+    script:
+    - /start_talk Adin
+    - Evening, ma'am.
+    - /wait
+    - Will you be needing anything else from me?
+    - /wait
+    - /option if flag KnifeRumor "Apparently the King was killed with a fancy knife."
+      4
+    - /option if flag LewinLover "Have you heard about Lewin?" 1
+    - /option if !flag LewinLover "Blather" if stat Player Blather > 5 1 0
+    - /option if flag GuardRumor "Millie tells me the guards know something more about
+      the King." 3
+    - /option "Have you heard anything of interest today?" 0
+    - /option if !flag DinnerChecked "How is dinner coming?" 2

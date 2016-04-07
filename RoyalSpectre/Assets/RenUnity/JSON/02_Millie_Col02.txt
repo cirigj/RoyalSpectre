@@ -1,0 +1,12 @@
+{
+    "branchName": "02_Millie_Col02",
+    "script": [
+        "/start_talk Colten",
+        "You know I couldn't leave the guard to join you. You were more than welcome to join us if you wanted to talk.",
+        "/wait",
+        "I'm sorry, that was out of line. Next time, please do join us, though.",
+        "/wait",
+        "/set_stat Player Charm -1",
+        "/stop_talk"
+    ]
+}

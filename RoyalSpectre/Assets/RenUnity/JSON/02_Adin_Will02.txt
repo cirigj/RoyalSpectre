@@ -1,0 +1,11 @@
+{
+    "branchName": "02_Adin_Will02",
+    "script": [
+        "/start_talk Will",
+        "I'm sure Emeline was whispering again. Don't concern yourself with her rumors, you'd be in over your head with those thoughts.",
+        "/wait",
+        "/set_stat Adin suspicion + 3",
+        "/set_stat Emeline suspicion + 5",
+        "/stop_talk"
+    ]
+}

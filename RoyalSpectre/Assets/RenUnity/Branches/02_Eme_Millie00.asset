@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da4f42e8f27847b4a9dfebe8af81667a, type: 3}
+  m_Name: 02_Eme_Millie00
+  m_EditorClassIdentifier: 
+  cachedIndex: 9
+  branch:
+    branchName: 02_Eme_Millie00
+    script:
+    - /start_talk Millie
+    - Evening ma'am.
+    - /wait
+    - /option if !flag MillieLunch "How did everything go today,love?" 0
+    - /option if flag MillieLunch "Did you hear anything interesting while serving"
+      1
+    - /option if flag LewinLover "I heard something interesting about Lewin" 2

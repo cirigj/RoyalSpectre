@@ -1,0 +1,11 @@
+{
+    "branchName": "02_Eme_Millie00",
+    "script": [
+        "/start_talk Millie",
+        "Evening ma'am.",
+        "/wait",
+        "/option if !flag MillieLunch \"How did everything go today,love?\" 0",
+        "/option if flag MillieLunch \"Did you hear anything interesting while serving\" 1",
+        "/option if flag LewinLover \"I heard something interesting about Lewin\" 2"
+    ]
+}

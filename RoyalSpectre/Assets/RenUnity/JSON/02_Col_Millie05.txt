@@ -1,0 +1,9 @@
+{
+    "branchName": "02_Col_Millie05",
+    "script": [
+        "/start_talk Millie",
+        "Alright, deal's a deal, I hear Lewin has a secret lover.",
+        "/wait",
+        "/stop_talk"
+    ]
+}

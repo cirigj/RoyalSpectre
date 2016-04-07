@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da4f42e8f27847b4a9dfebe8af81667a, type: 3}
+  m_Name: 02_Adin_Millie03
+  m_EditorClassIdentifier: 
+  cachedIndex: 34
+  branch:
+    branchName: 02_Adin_Millie03
+    script:
+    - /start_talk Millie
+    - I heard plenty, but you gotta tell me something if you want to hear any of it!
+    - /option if flag NewStaff "I heard from Emeline that Lewin plans on hiring new
+      guards" 0
+    - '/option if !flag NewStaff "Deceive: New Guards" if stat Player Deceive > 5
+      0 1'
+    - /option if flag Merchant "Emeline thinks the merchant is part of the murder"
+      2
+    - '/option if !flag Merchant "Persuade: No rumors" if stat Player Persuade > 3
+      3 4'

@@ -1,0 +1,9 @@
+{
+    "branchName": "02_Col_Eme00",
+    "script": [
+        "/start_talk Emeline",
+        "Dinner isn’t for a couple of hours love, but if you want something to tide ye over, there’s bread rolls can be found in the great hall for the time being.",
+        "/wait",
+        "/stop_talk"
+    ]
+}

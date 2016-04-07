@@ -1,0 +1,20 @@
+{
+    "branchName": "02_Adin_Millie00",
+    "script": [
+        "/start_talk Millie",
+        "Hello Adin, how did you do without me?",
+        "/wait",
+        "/start_talk Adin",
+        "It wasn't easy, but dinner's on schedule, I think.",
+        "/wait",
+        "/start_talk Millie",
+        "That's good; if you're lucky Emeline might let you have the night off now.",
+        "/wait",
+        "Wouldn't that be great?",
+        "/wait",
+        "/start_talk Adin",
+        "Yes, it would.",
+        "/option if flag GuardRumor \"I heard the guards talking earlier...\"",
+        "/option \"So how was your day?\""
+    ]
+}

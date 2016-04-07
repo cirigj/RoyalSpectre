@@ -1,0 +1,10 @@
+{
+    "branchName": "02_Eme_Colten02",
+    "script": [
+        "/start_talk Colten",
+        "/set_stat Emeline Suspicion + 5",
+        "Watch yourself, Emeline. I won't take criticism from the likes of you.",
+        "/wait",
+        "/stop_talk"
+    ]
+}

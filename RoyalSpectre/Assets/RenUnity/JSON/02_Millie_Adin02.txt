@@ -1,0 +1,12 @@
+{
+    "branchName": "02_Millie_Adin02",
+    "script": [
+        "/start_talk Adin",
+        "Can't say I know for sure. You know the guards don't like me much.",
+        "/wait",
+        "/set_stat Millie suspicion + 5",
+        "If you want to hear from the guards just talk to Colten. He'll probably talk to you, after all.",
+        "/wait",
+        "/stop_talk"
+    ]
+}

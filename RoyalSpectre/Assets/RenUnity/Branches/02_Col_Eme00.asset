@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da4f42e8f27847b4a9dfebe8af81667a, type: 3}
+  m_Name: 02_Col_Eme00
+  m_EditorClassIdentifier: 
+  cachedIndex: 25
+  branch:
+    branchName: 02_Col_Eme00
+    script:
+    - /start_talk Emeline
+    - "Dinner isn\u2019t for a couple of hours love, but if you want something to
+      tide ye over, there\u2019s bread rolls can be found in the great hall for the
+      time being."
+    - /wait
+    - /stop_talk

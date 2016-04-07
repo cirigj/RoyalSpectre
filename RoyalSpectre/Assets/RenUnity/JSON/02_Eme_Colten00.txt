@@ -1,0 +1,12 @@
+{
+    "branchName": "02_Eme_Colten00",
+    "script": [
+        "/start_talk Colten",
+        "What is it cook?",
+        "/wait",
+        "/option if flag GuardRumor \"I hear you know Kara's guilty\" 3",
+        "/option \"How was your day?\" 0",
+        "/option \"Must you be so rude?\" 1",
+        "/option \"Has anything interesting occured with the guard?\" 2"
+    ]
+}

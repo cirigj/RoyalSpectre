@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da4f42e8f27847b4a9dfebe8af81667a, type: 3}
+  m_Name: 02_Adin_Eme03
+  m_EditorClassIdentifier: 
+  cachedIndex: 43
+  branch:
+    branchName: 02_Adin_Eme03
+    script:
+    - /start_talk Emeline
+    - Well, that may be true, but don't think to slack off.
+    - /wait
+    - Just because there's talk of recruiting new guards don't mean your like to move
+      on from the kitchens any time soon.
+    - /wait
+    - /set_flag NewStaff
+    - /stop_talk

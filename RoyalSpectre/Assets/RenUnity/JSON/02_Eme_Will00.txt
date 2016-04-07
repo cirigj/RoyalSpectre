@@ -1,0 +1,8 @@
+{
+    "branchName": "02_Eme_Will00",
+    "script": [
+        "/start_talk Will",
+        "/jump +0 if !flag GuardRumor",
+        "/jump +1 if flag GuardRumor"
+    ]
+}

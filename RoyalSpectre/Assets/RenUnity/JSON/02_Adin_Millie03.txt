@@ -1,0 +1,11 @@
+{
+    "branchName": "02_Adin_Millie03",
+    "script": [
+        "/start_talk Millie",
+        "I heard plenty, but you gotta tell me something if you want to hear any of it!",
+        "/option if flag NewStaff \"I heard from Emeline that Lewin plans on hiring new guards\" 0",
+        "/option if !flag NewStaff \"Deceive: New Guards\" if stat Player Deceive > 5 0 1",
+        "/option if flag Merchant \"Emeline thinks the merchant is part of the murder\" 2",
+        "/option if !flag Merchant \"Persuade: No rumors\" if stat Player Persuade > 3 2 3"
+    ]
+}

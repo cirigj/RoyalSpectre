@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da4f42e8f27847b4a9dfebe8af81667a, type: 3}
+  m_Name: 02_Adin_Millie06
+  m_EditorClassIdentifier: 
+  cachedIndex: -1
+  branch:
+    branchName: 02_Adin_Millie06
+    script:
+    - /start_talk Millie
+    - Really? Emeline thinks that?
+    - /wait
+    - He didn't seem suspicious at lunch. Then again no one does know too much about
+      him, and he's been more successful since Prince Aldin has taken the throne.
+    - /wait
+    - I did hear the guards talking about having proof that it was Kara though, so
+      it couldn't have been him.
+    - /wait
+    - /set_flag GuardRumor
+    - /stop_talk

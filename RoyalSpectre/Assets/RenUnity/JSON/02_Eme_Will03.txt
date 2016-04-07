@@ -1,0 +1,11 @@
+{
+    "branchName": "02_Eme_Will03",
+    "script": [
+        "/start_talk Will",
+        "I don't know how you heard that.",
+        "/set_stat Emilia Suspicion 50",
+        "/wait",
+        "but that exorcist will certainly find out.",
+        "/stop_talk"
+    ]
+}

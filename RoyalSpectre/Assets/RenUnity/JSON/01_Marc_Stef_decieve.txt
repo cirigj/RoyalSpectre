@@ -1,0 +1,11 @@
+{
+    "branchName": "01_Marc_Stef_decieve",
+    "script": [
+    "/start_talk Marc",
+    "I knew your brother for quite a long time you see - he and I have been acquaintences for quite a while"
+    "/stop_talk",
+
+
+
+    ]
+}

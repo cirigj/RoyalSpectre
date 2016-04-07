@@ -1,0 +1,9 @@
+{
+    "branchName": "02_Col_Will02",
+    "script": [
+        "/start_talk Will",
+        "Right then, back on duty.",
+        "/wait",
+        "/stop_talk"
+    ]
+}

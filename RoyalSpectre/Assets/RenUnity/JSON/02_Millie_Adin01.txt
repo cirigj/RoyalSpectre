@@ -1,0 +1,12 @@
+{
+    "branchName": "02_Millie_Adin01",
+    "script": [
+        "/start_talk Adin",
+        "Well if it's anything memorable it would have to be that emerald cutlass. It was forged years ago, and kept jumping from person to person, I have no idea who ended up with it.",
+        "/wait",
+        "I suppose it ended up with Kara, if they say she was found with it in the King's chambers.",
+        "/wait",
+        "/set_flag Puzzle2Fin",
+        "/jump + 0"
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "branchName": "02_Millie_Adin03",
+    "script": [
+        "/start_talk Adin",
+        "Much quieter, quite boring really. At most there was some mumbling from the guards.",
+        "/wait",
+        "I'm much more used to the noise of the forge, or the liveliness when you two gossip.",
+        "/wait",
+        "/stop_talk"
+    ]
+}

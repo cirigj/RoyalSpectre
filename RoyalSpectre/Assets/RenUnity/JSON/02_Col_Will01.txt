@@ -1,0 +1,11 @@
+{
+    "branchName": "02_Col_Will01",
+    "script": [
+        "/start_talk Will",
+        "I thought I said we'd discuss later...",
+        "/wait",
+        "/option \"Sorry sir, you're right.\" 0",
+        "/option \"But if it's important, I ought to know.\" 1",
+        "/option \"Blather\" 1"
+    ]
+}

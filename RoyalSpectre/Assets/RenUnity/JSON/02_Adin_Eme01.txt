@@ -1,0 +1,9 @@
+{
+    "branchName": "02_Adin_Eme01",
+    "script": [
+        "/start_talk Emeline",
+        "Yes I heard, the Captain knows something, alright, but he wouldn't tell the likes of us. Colten might spill to Millie, but otherwise we're in the dark.",
+        "/wait",
+        "/stop_talk"
+    ]
+}

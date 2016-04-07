@@ -1,0 +1,11 @@
+{
+    "branchName": "02_Eme_Adin01",
+    "script": [
+        "/start_talk Adin",
+        "/set_stat Emeline Suspicion + 3",
+        "Well, no, not any that you wouldn't have already heard, ma'am.",
+        "/wait",
+        "Usually I hear things like that from you.",
+        "/stop_talk"
+    ]
+}

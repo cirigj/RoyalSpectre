@@ -1,0 +1,22 @@
+{
+    "branchName": "Branch 1",
+    "script": [
+        "/start_talk JohnCena",
+        "this is a message",
+        "/wait",//looking for player input, clicking the screen. before lenghty messages, character switrches, and giving them their options
+		"/set_flag ItsAFlag",//set_glag creates flag
+		"/start_talk Example",//use start talk to change the speakers
+        "this is a second message",
+        "/wait",
+        "/set_stat JohnCena Suspicion - 3",
+        "/option \"Option 1\" 0",//black text is what appears on the button, the number is the branch to go to
+        "/option \"Option 2\" 1",
+        "/option if flag ItsAFlag \"Use the Flag\" 2",
+		"/option if stat JohnCena Suspicion > 3 \"John Cena is suspicious\" if stat JohnCena Suspicion > 6 2 1",
+		"/option if !flag ItsAFlag \"Blather\" if stat Player Blather > 3 2 1",//if blatrher>3, go to branch indexed at 2, else go to branch indexed at 1
+		"/option if stat JohnCena Suspicion <= 3 \"Deceive\" if stat Player Deceive > 3 2 1",
+		"/stop_talk" //this ends the convo and close diaglogue box - only do this once you are completely done with the talking
+        "/jump + 0"// goes to the branch 0
+        "/jump - 1"//makes it go 2 parents back
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "branchName": "02_Millie_Col00",
+    "script": [
+        "/start_talk Colten",
+        "Millie, hello. I saw you in the Great Hall, are they making you a permanent serving girl?",
+        "/wait",
+        "/option if flag GuardRumor \"I meant to come join you and chat but...\" 0",
+        "/option if !flag GuardRumor \"Charm\" if Player Charm > 3 0 1",
+        "/option \"I hope so, it would be a nice change\" 2"
+    ]
+}

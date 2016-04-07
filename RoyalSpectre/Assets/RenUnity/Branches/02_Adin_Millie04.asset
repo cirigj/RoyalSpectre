@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da4f42e8f27847b4a9dfebe8af81667a, type: 3}
+  m_Name: 02_Adin_Millie04
+  m_EditorClassIdentifier: 
+  cachedIndex: -1
+  branch:
+    branchName: 02_Adin_Millie04
+    script:
+    - /start_talk Millie
+    - '"That would make sense, you''d think more guards would be smart after something
+      like that happened in the King''s chambers.'
+    - /wait
+    - Well, based on what I heard, the guard is at least picking up the slack. It
+      sounded like they had evidence against Kara.
+    - /set_flag GuardRumor
+    - /stop_talk

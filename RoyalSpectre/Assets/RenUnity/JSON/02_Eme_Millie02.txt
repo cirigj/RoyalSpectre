@@ -1,0 +1,12 @@
+{
+    "branchName": "02_Eme_Millie02",
+    "script": [
+        "/start_talk Millie",
+        "Of course, there was plenty to hear about, plenty of buzz about the late king.",
+        "/wait",
+        "I heard the guard's have evidence to prove m'lady Kara done it.",
+        "/set_flag GuardRumor",
+        "/wait",
+        "/stop_talk"
+    ]
+}
