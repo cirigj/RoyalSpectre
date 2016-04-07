@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 using JBirdEngine.RenUnity;
@@ -24,6 +25,9 @@ public class Person : InteractableObject {
 	public GameObject currentRoom;
 	public int suspicionLevel;
 
+	//UI jazz
+	public GameObject nameplate;
+
 	//dialogue stuff
 	//enum for character
 	public Character character;
@@ -45,7 +49,7 @@ public class Person : InteractableObject {
 			Debug.Log (gameObject.name + " needs reference to ghost hunter and ghost assigned in the inspector");
 		}
 		suspicionLevel = 0;
-		//gameObject.GetComponent<CircleCollider> ().enabled = false;
+		nameplate.GetComponentInChildren<Text> ().text = character.ToString ();
 	}
 
 	//if player tries to talk
@@ -128,7 +132,7 @@ public class Person : InteractableObject {
 				//anim.SetBool ("idle", true);
 				walkingRight = false;
 			} // -----------------------------------------------------
-			if (Input.GetKey (KeyCode.Space) && cooldown <= Time.time) {
+			if (Input.GetKeyDown (KeyCode.Space) && cooldown <= Time.time) {
 				UseGhostForm ();
 			}
 		} else {
