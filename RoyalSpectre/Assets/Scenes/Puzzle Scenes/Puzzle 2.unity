@@ -1623,7 +1623,15 @@ MonoBehaviour:
   suspicionLevel: 0
   nameplate: {fileID: 1787514927}
   character: 9
-  convo: []
+  convo:
+  - character: 6
+    branch: {fileID: 11400000, guid: 091179f27325b214cb8a89e2e2f71caa, type: 2}
+  - character: 7
+    branch: {fileID: 11400000, guid: 5be603981594e21478ee6ed363649be0, type: 2}
+  - character: 10
+    branch: {fileID: 11400000, guid: 9031b78195415d744a29e152d476e5d3, type: 2}
+  - character: 8
+    branch: {fileID: 11400000, guid: ba865af2a444ddd41948a3b1c5749ca0, type: 2}
 --- !u!4 &684987401
 Transform:
   m_ObjectHideFlags: 0
@@ -4125,13 +4133,11 @@ MonoBehaviour:
   character: 7
   convo:
   - character: 6
-    branch: {fileID: 11400000, guid: 3caf6d081b4c0e84ca2a59a5a91fdaaa, type: 2}
+    branch: {fileID: 11400000, guid: fe9e60d618b2bcc4889a104d3ae1327e, type: 2}
   - character: 8
-    branch: {fileID: 11400000, guid: 98b675fa454bd15419fea46cb1b212d2, type: 2}
+    branch: {fileID: 11400000, guid: 2e79dad9b6a1eb64080ebe619592bd31, type: 2}
   - character: 10
-    branch: {fileID: 11400000, guid: 3fbfc319a59f48940bf37fe231627f80, type: 2}
-  - character: 9
-    branch: {fileID: 11400000, guid: 5be603981594e21478ee6ed363649be0, type: 2}
+    branch: {fileID: 11400000, guid: 65a71456d6443a54ba38fb03a9ffc62f, type: 2}
 --- !u!4 &1608204034
 Transform:
   m_ObjectHideFlags: 0
@@ -4659,13 +4665,11 @@ MonoBehaviour:
   character: 6
   convo:
   - character: 8
-    branch: {fileID: 11400000, guid: b52f8a4f1595b2544a2eac814eed00e4, type: 2}
+    branch: {fileID: 11400000, guid: 153b07ca5200e254d9aa024778406b2c, type: 2}
   - character: 7
-    branch: {fileID: 11400000, guid: fe9e60d618b2bcc4889a104d3ae1327e, type: 2}
+    branch: {fileID: 11400000, guid: 3caf6d081b4c0e84ca2a59a5a91fdaaa, type: 2}
   - character: 10
-    branch: {fileID: 11400000, guid: 41197fb891280024db76291b6dcf87bd, type: 2}
-  - character: 9
-    branch: {fileID: 11400000, guid: 091179f27325b214cb8a89e2e2f71caa, type: 2}
+    branch: {fileID: 11400000, guid: 51f09062f20f25d45aa97ee68f5b8d83, type: 2}
 --- !u!4 &1739710079
 Transform:
   m_ObjectHideFlags: 0
@@ -4713,6 +4717,7 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -5080,13 +5085,11 @@ MonoBehaviour:
   character: 8
   convo:
   - character: 6
-    branch: {fileID: 11400000, guid: 153b07ca5200e254d9aa024778406b2c, type: 2}
+    branch: {fileID: 11400000, guid: b52f8a4f1595b2544a2eac814eed00e4, type: 2}
   - character: 7
-    branch: {fileID: 11400000, guid: 2e79dad9b6a1eb64080ebe619592bd31, type: 2}
+    branch: {fileID: 11400000, guid: 98b675fa454bd15419fea46cb1b212d2, type: 2}
   - character: 10
-    branch: {fileID: 11400000, guid: 22841d9261cf80a4ab119b3558f41160, type: 2}
-  - character: 9
-    branch: {fileID: 11400000, guid: ba865af2a444ddd41948a3b1c5749ca0, type: 2}
+    branch: {fileID: 11400000, guid: 227d97cfd28785841850aaaff12b99b0, type: 2}
 --- !u!4 &1815775101
 Transform:
   m_ObjectHideFlags: 0
@@ -5903,13 +5906,11 @@ MonoBehaviour:
   character: 10
   convo:
   - character: 6
-    branch: {fileID: 11400000, guid: 51f09062f20f25d45aa97ee68f5b8d83, type: 2}
+    branch: {fileID: 11400000, guid: 41197fb891280024db76291b6dcf87bd, type: 2}
   - character: 8
-    branch: {fileID: 11400000, guid: 227d97cfd28785841850aaaff12b99b0, type: 2}
+    branch: {fileID: 11400000, guid: 22841d9261cf80a4ab119b3558f41160, type: 2}
   - character: 7
-    branch: {fileID: 11400000, guid: 65a71456d6443a54ba38fb03a9ffc62f, type: 2}
-  - character: 9
-    branch: {fileID: 11400000, guid: 9031b78195415d744a29e152d476e5d3, type: 2}
+    branch: {fileID: 11400000, guid: 3fbfc319a59f48940bf37fe231627f80, type: 2}
 --- !u!4 &2126543167
 Transform:
   m_ObjectHideFlags: 0
