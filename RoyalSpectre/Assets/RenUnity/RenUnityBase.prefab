@@ -51,10 +51,20 @@ MonoBehaviour:
       portrait: {fileID: 0}
     - mood: 2
       portrait: {fileID: 0}
+    - mood: 3
+      portrait: {fileID: 0}
     stats:
     - stat: 1
       value: 0
     - stat: 2
+      value: 0
+    - stat: 3
+      value: 0
+    - stat: 4
+      value: 0
+    - stat: 5
+      value: 0
+    - stat: 6
       value: 0
   - name: 2
     defaultPortrait: {fileID: 0}
@@ -63,10 +73,196 @@ MonoBehaviour:
       portrait: {fileID: 0}
     - mood: 2
       portrait: {fileID: 0}
+    - mood: 3
+      portrait: {fileID: 0}
     stats:
     - stat: 1
       value: 0
     - stat: 2
+      value: 0
+    - stat: 3
+      value: 0
+    - stat: 4
+      value: 0
+    - stat: 5
+      value: 0
+    - stat: 6
+      value: 0
+  - name: 3
+    defaultPortrait: {fileID: 0}
+    portraits:
+    - mood: 1
+      portrait: {fileID: 0}
+    - mood: 2
+      portrait: {fileID: 0}
+    - mood: 3
+      portrait: {fileID: 0}
+    stats:
+    - stat: 1
+      value: 0
+    - stat: 2
+      value: 0
+    - stat: 3
+      value: 0
+    - stat: 4
+      value: 0
+    - stat: 5
+      value: 0
+    - stat: 6
+      value: 0
+  - name: 4
+    defaultPortrait: {fileID: 0}
+    portraits:
+    - mood: 1
+      portrait: {fileID: 0}
+    - mood: 2
+      portrait: {fileID: 0}
+    - mood: 3
+      portrait: {fileID: 0}
+    stats:
+    - stat: 1
+      value: 0
+    - stat: 2
+      value: 0
+    - stat: 3
+      value: 0
+    - stat: 4
+      value: 0
+    - stat: 5
+      value: 0
+    - stat: 6
+      value: 0
+  - name: 5
+    defaultPortrait: {fileID: 0}
+    portraits:
+    - mood: 1
+      portrait: {fileID: 0}
+    - mood: 2
+      portrait: {fileID: 0}
+    - mood: 3
+      portrait: {fileID: 0}
+    stats:
+    - stat: 1
+      value: 0
+    - stat: 2
+      value: 0
+    - stat: 3
+      value: 0
+    - stat: 4
+      value: 0
+    - stat: 5
+      value: 0
+    - stat: 6
+      value: 0
+  - name: 6
+    defaultPortrait: {fileID: 0}
+    portraits:
+    - mood: 1
+      portrait: {fileID: 0}
+    - mood: 2
+      portrait: {fileID: 0}
+    - mood: 3
+      portrait: {fileID: 0}
+    stats:
+    - stat: 1
+      value: 0
+    - stat: 2
+      value: 0
+    - stat: 3
+      value: 0
+    - stat: 4
+      value: 0
+    - stat: 5
+      value: 0
+    - stat: 6
+      value: 0
+  - name: 7
+    defaultPortrait: {fileID: 0}
+    portraits:
+    - mood: 1
+      portrait: {fileID: 0}
+    - mood: 2
+      portrait: {fileID: 0}
+    - mood: 3
+      portrait: {fileID: 0}
+    stats:
+    - stat: 1
+      value: 0
+    - stat: 2
+      value: 0
+    - stat: 3
+      value: 0
+    - stat: 4
+      value: 0
+    - stat: 5
+      value: 0
+    - stat: 6
+      value: 0
+  - name: 8
+    defaultPortrait: {fileID: 0}
+    portraits:
+    - mood: 1
+      portrait: {fileID: 0}
+    - mood: 2
+      portrait: {fileID: 0}
+    - mood: 3
+      portrait: {fileID: 0}
+    stats:
+    - stat: 1
+      value: 0
+    - stat: 2
+      value: 0
+    - stat: 3
+      value: 0
+    - stat: 4
+      value: 0
+    - stat: 5
+      value: 0
+    - stat: 6
+      value: 0
+  - name: 9
+    defaultPortrait: {fileID: 0}
+    portraits:
+    - mood: 1
+      portrait: {fileID: 0}
+    - mood: 2
+      portrait: {fileID: 0}
+    - mood: 3
+      portrait: {fileID: 0}
+    stats:
+    - stat: 1
+      value: 0
+    - stat: 2
+      value: 0
+    - stat: 3
+      value: 0
+    - stat: 4
+      value: 0
+    - stat: 5
+      value: 0
+    - stat: 6
+      value: 0
+  - name: 10
+    defaultPortrait: {fileID: 0}
+    portraits:
+    - mood: 1
+      portrait: {fileID: 0}
+    - mood: 2
+      portrait: {fileID: 0}
+    - mood: 3
+      portrait: {fileID: 0}
+    stats:
+    - stat: 1
+      value: 0
+    - stat: 2
+      value: 0
+    - stat: 3
+      value: 0
+    - stat: 4
+      value: 0
+    - stat: 5
+      value: 0
+    - stat: 6
       value: 0
   writeSpeed: 0.1
   messageBoxPrefab: {fileID: 11497064, guid: 0d820cdc259176542bda12a3d7480752, type: 2}

@@ -1,6 +1,7 @@
 {
     "branchName": "01_Marc_Stef_sus",
     "script": [
-    "/set_stat Stefano Suspicion + 1",]
+    "/set_stat Stefano Suspicion + 1",
     "/jump + 0"
+    ]
 }

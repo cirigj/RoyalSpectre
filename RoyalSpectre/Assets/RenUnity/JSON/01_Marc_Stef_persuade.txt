@@ -1,4 +1,35 @@
 {
     "branchName": "01_Marc_Stef_persuade",
-    "script": []
+    "script": [
+    "/start_talk Marc"
+    "I'm a bit concerned about the current state of affairs",
+    "/wait",
+    "/start_talk Stefano"
+    "What's the issue?",
+    "/wait",
+    "/start_talk Marc"
+    "The overall productivity of the jail seems to have taken a noticable slip in the past few weeks."
+    "/wait",
+    "Although I am only a guard, I'd like to ensure that this jail takes care of its scum appropriately."
+    "/wait",
+    "So, I feel that it's my duty to inform you of this issue before the jail does not fulfill it's duty of"
+    "/wait"
+    "providing a safe means to tkae care of the land's scum"
+    "/wait",
+    "/start_talk Stefano",
+    "How is it exactly that you feel the jail has become more unproductive Marc?"
+    "/wait",
+    "/start_talk Marc",
+    "Crime across the lands have increased noticeably in the past few weeks. Moreover, the past few weeks have been the lowest criminal to incarceration ratio that I've seen since my time serving as a guard here
+    "/wait"
+    "Sir, this comes from a place of concern - not a place of disrespect or disregard to your authority"
+    "/wait",
+    "/start_talk Stefano",
+    "I understand. Alright Stefano, your loyalty has earned my trust over the years. However I'll need you to keep this secret. Do you understand?"
+    "/wait",
+    "/start_talk Marc",
+    "Why yes I do. Tell me - what's going on?"
+    "/start_talk Stefano",
+    "/jump + 4"
+	]
 }

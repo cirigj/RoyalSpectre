@@ -1,4 +1,15 @@
 {
     "branchName": "01_Marc_Stef_01",
-    "script": []
+    "script": [
+    "/start_talk Stef"
+    "Interesting response subordinate. Well, we don't have much time now so on with it",
+    "/wait",
+    "/start_talk Marc"
+    "Yes sir",
+    "/wait",
+    "/option \"Charm\" 0",
+    "/option \"Persuade\" 2",
+    "/option \"Blather\" 1",
+    "/option \"Decieve\" 3",
+    ]
 }

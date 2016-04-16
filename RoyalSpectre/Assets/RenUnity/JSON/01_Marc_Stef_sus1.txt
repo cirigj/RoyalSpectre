@@ -1,0 +1,10 @@
+{
+    "branchName": "01_Marc_Stef_sus1",
+    "script": [
+    "/set_stat Stefano Suspicion + 2",
+    "/start_talk Stefano"
+    "I'm not really sure what that has to do with anything, but alright"
+    "/wait",
+    "/jump + 0"
+    ]
+}

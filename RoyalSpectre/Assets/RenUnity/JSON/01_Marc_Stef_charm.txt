@@ -1,7 +1,6 @@
 {
     "branchName": "01_Marc_Stef_charm",
     "script": [
-
     "/start_talk Marc"
     "It's just that ever since your brother has gone to jail, you haven't been like you used to be",
     "/wait",

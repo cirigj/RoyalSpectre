@@ -1,4 +1,43 @@
 {
     "branchName": "01_Marc_Stef_blather",
-    "script": []
+    "script": [
+    "/start_talk Marc"
+    "I'm a bit concerned about the current state of affairs",
+    "/wait",
+    "/start_talk Stefano"
+    "What's the issue?",
+    "/wait",
+    "/start_talk Marc"
+    "The jail seems to have taken a noticable slip in the past few weeks."
+    "/wait",
+    "Although I am only a guard, I'd like to ensure that this jail remains squeaky clean."
+    "/wait",
+    "/start_talk Stefano"
+    "Eh..."
+    "/wait",
+    "/start_talk Marc"
+    "Spealing of which, I truly like your uniform today even though it's the same one you've always worn"
+    "/wait"
+    "/start_talk Stefano"
+    "Um..."
+    "/wait",
+    "/start_talk Marc"
+    "But yeah anyway who's the new prisoner. He seems to be quite fond of you for some reason."
+    "/wait",
+    "Maybe it's the way that you dress"
+    "/wait",
+    "/start_talk Stefano"
+    "..."
+    "/wait",
+    "/start_talk Marc"
+    "Sir, this comes from a place of innocent curiosity - who is he exactly?"
+    "/wait",
+    "/start_talk Stefano",
+    "Um... I found that to be quite uncomfortable. Alright Stefano, your loyalty has earned my trust over the years. However I'll need you to keep this secret. Do you understand?"
+    "/wait",
+    "/start_talk Marc",
+    "Why yes I do. Tell me - what's going on?"
+    "/start_talk Stefano",
+    "/jump + 5"
+    ]
 }

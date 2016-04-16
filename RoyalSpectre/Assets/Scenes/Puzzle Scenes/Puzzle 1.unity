@@ -3191,6 +3191,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1502121544}
   - 114: {fileID: 1502121543}
+  - 114: {fileID: 1502121545}
   m_Layer: 0
   m_Name: Ren Unity
   m_TagString: Untagged
@@ -3206,39 +3207,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1502121542}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa6807d117418014db5273bd38331fbf, type: 3}
+  m_Script: {fileID: 11500000, guid: c7c924f3728b1b54da7612c2e60e7c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  singletonSBO: {fileID: 11400000, guid: 671b9e481bbf1b642a9bcf4ba0e94691, type: 2}
-  conditionalFlags: []
-  characterData:
-  - name: 1
-    defaultPortrait: {fileID: 0}
-    portraits:
-    - mood: 1
-      portrait: {fileID: 0}
-    - mood: 2
-      portrait: {fileID: 0}
-    stats:
-    - stat: 1
-      value: 0
-    - stat: 2
-      value: 0
-  - name: 2
-    defaultPortrait: {fileID: 0}
-    portraits:
-    - mood: 1
-      portrait: {fileID: 0}
-    - mood: 2
-      portrait: {fileID: 0}
-    stats:
-    - stat: 1
-      value: 0
-    - stat: 2
-      value: 0
-  writeSpeed: 0.1
-  messageBoxPrefab: {fileID: 11497064, guid: 3bf448951ae46f94ca182eb78c2b482a, type: 2}
-  uiCanvas: {fileID: 341012481}
 --- !u!4 &1502121544
 Transform:
   m_ObjectHideFlags: 0
@@ -3251,6 +3222,245 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
+--- !u!114 &1502121545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1502121542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b582269b0ff49914aae260af0cbf2583, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  singletonSBO: {fileID: 11400000, guid: 0dc46d43fbd1c7442af69bbd50531e28, type: 2}
+  jsonFilePath: Assets/RenUnity/JSON/
+  branchesFilePath: Assets/RenUnity/Branches/
+  conditionalFlags: []
+  characterData:
+  - name: 1
+    defaultPortrait: {fileID: 0}
+    portraits:
+    - mood: 1
+      portrait: {fileID: 0}
+    - mood: 2
+      portrait: {fileID: 0}
+    - mood: 3
+      portrait: {fileID: 0}
+    stats:
+    - stat: 1
+      value: 0
+    - stat: 2
+      value: 0
+    - stat: 3
+      value: 0
+    - stat: 4
+      value: 0
+    - stat: 5
+      value: 0
+    - stat: 6
+      value: 0
+  - name: 2
+    defaultPortrait: {fileID: 0}
+    portraits:
+    - mood: 1
+      portrait: {fileID: 0}
+    - mood: 2
+      portrait: {fileID: 0}
+    - mood: 3
+      portrait: {fileID: 0}
+    stats:
+    - stat: 1
+      value: 0
+    - stat: 2
+      value: 0
+    - stat: 3
+      value: 0
+    - stat: 4
+      value: 0
+    - stat: 5
+      value: 0
+    - stat: 6
+      value: 0
+  - name: 3
+    defaultPortrait: {fileID: 0}
+    portraits:
+    - mood: 1
+      portrait: {fileID: 0}
+    - mood: 2
+      portrait: {fileID: 0}
+    - mood: 3
+      portrait: {fileID: 0}
+    stats:
+    - stat: 1
+      value: 0
+    - stat: 2
+      value: 0
+    - stat: 3
+      value: 0
+    - stat: 4
+      value: 0
+    - stat: 5
+      value: 0
+    - stat: 6
+      value: 0
+  - name: 4
+    defaultPortrait: {fileID: 0}
+    portraits:
+    - mood: 1
+      portrait: {fileID: 0}
+    - mood: 2
+      portrait: {fileID: 0}
+    - mood: 3
+      portrait: {fileID: 0}
+    stats:
+    - stat: 1
+      value: 0
+    - stat: 2
+      value: 0
+    - stat: 3
+      value: 0
+    - stat: 4
+      value: 0
+    - stat: 5
+      value: 0
+    - stat: 6
+      value: 0
+  - name: 5
+    defaultPortrait: {fileID: 0}
+    portraits:
+    - mood: 1
+      portrait: {fileID: 0}
+    - mood: 2
+      portrait: {fileID: 0}
+    - mood: 3
+      portrait: {fileID: 0}
+    stats:
+    - stat: 1
+      value: 0
+    - stat: 2
+      value: 0
+    - stat: 3
+      value: 0
+    - stat: 4
+      value: 0
+    - stat: 5
+      value: 0
+    - stat: 6
+      value: 0
+  - name: 6
+    defaultPortrait: {fileID: 0}
+    portraits:
+    - mood: 1
+      portrait: {fileID: 0}
+    - mood: 2
+      portrait: {fileID: 0}
+    - mood: 3
+      portrait: {fileID: 0}
+    stats:
+    - stat: 1
+      value: 0
+    - stat: 2
+      value: 0
+    - stat: 3
+      value: 0
+    - stat: 4
+      value: 0
+    - stat: 5
+      value: 0
+    - stat: 6
+      value: 0
+  - name: 7
+    defaultPortrait: {fileID: 0}
+    portraits:
+    - mood: 1
+      portrait: {fileID: 0}
+    - mood: 2
+      portrait: {fileID: 0}
+    - mood: 3
+      portrait: {fileID: 0}
+    stats:
+    - stat: 1
+      value: 0
+    - stat: 2
+      value: 0
+    - stat: 3
+      value: 0
+    - stat: 4
+      value: 0
+    - stat: 5
+      value: 0
+    - stat: 6
+      value: 0
+  - name: 8
+    defaultPortrait: {fileID: 0}
+    portraits:
+    - mood: 1
+      portrait: {fileID: 0}
+    - mood: 2
+      portrait: {fileID: 0}
+    - mood: 3
+      portrait: {fileID: 0}
+    stats:
+    - stat: 1
+      value: 0
+    - stat: 2
+      value: 0
+    - stat: 3
+      value: 0
+    - stat: 4
+      value: 0
+    - stat: 5
+      value: 0
+    - stat: 6
+      value: 0
+  - name: 9
+    defaultPortrait: {fileID: 0}
+    portraits:
+    - mood: 1
+      portrait: {fileID: 0}
+    - mood: 2
+      portrait: {fileID: 0}
+    - mood: 3
+      portrait: {fileID: 0}
+    stats:
+    - stat: 1
+      value: 0
+    - stat: 2
+      value: 0
+    - stat: 3
+      value: 0
+    - stat: 4
+      value: 0
+    - stat: 5
+      value: 0
+    - stat: 6
+      value: 0
+  - name: 10
+    defaultPortrait: {fileID: 0}
+    portraits:
+    - mood: 1
+      portrait: {fileID: 0}
+    - mood: 2
+      portrait: {fileID: 0}
+    - mood: 3
+      portrait: {fileID: 0}
+    stats:
+    - stat: 1
+      value: 0
+    - stat: 2
+      value: 0
+    - stat: 3
+      value: 0
+    - stat: 4
+      value: 0
+    - stat: 5
+      value: 0
+    - stat: 6
+      value: 0
+  writeSpeed: 0.1
+  messageBoxPrefab: {fileID: 0}
+  uiCanvas: {fileID: 0}
 --- !u!1001 &1615503166
 Prefab:
   m_ObjectHideFlags: 0
