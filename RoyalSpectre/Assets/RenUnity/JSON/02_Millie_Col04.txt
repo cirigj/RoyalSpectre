@@ -4,6 +4,6 @@
         "/start_talk Colten",
         "I probably shouldn't, Will didn't want us spreading word about anything. Sorry.",
         "/wait",
-        "/stop_talking"
+        "/stop_talk"
     ]
 }

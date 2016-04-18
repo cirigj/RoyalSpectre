@@ -28,7 +28,7 @@
         "/wait",
         "/start_talk Adin",
         "Yes, it would.",
-        "/option if flag GuardRumor \"I heard the guards talking earlier...\"",
-        "/option \"So how was your day?\""
+        "/option if flag GuardRumor \"I heard the guards talking earlier...\" 0",
+        "/option \"So how was your day?\" 1"
     ]
 }

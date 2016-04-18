@@ -16,7 +16,8 @@ MonoBehaviour:
     branchName: 02_Col_Adin00
     script:
     - /start_talk Adin
-    - /jump + 0 if Colten Suspicion > 5
-    - /jump + 1 if Colten Suspicion <= 5 "Go Away"
+    - if Colten Suspicion > 5 "Sorry, sir. I've got work to do, no time to chat."
     - /wait
-    - /stop_chat
+    - if Colten Suspicion <= 5 "Go Away"
+    - /wait
+    - /stop_talk

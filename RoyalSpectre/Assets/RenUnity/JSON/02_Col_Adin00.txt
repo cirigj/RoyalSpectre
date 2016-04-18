@@ -2,9 +2,10 @@
     "branchName": "02_Col_Adin00",
     "script": [
         "/start_talk Adin",
-        "/if Colten Suspicion > 5 \"Sorry, sir. I've got work to do, no time to chat.\"",
-        "/if Colten Suspicion <= 5 \"Go Away\"",
+        "if Colten Suspicion > 5 \"Sorry, sir. I've got work to do, no time to chat.\"",
+		"/wait",
+        "if Colten Suspicion <= 5 \"Go Away\"",
         "/wait",
-        "/stop_chat"
+        "/stop_talk"
     ]
 }
