@@ -14,9 +14,10 @@
         "/option if flag ItsAFlag \"Use the Flag\" 2",
 		"/option if stat JohnCena Suspicion > 3 \"John Cena is suspicious\" if stat JohnCena Suspicion > 6 2 1",
 		"/option if !flag ItsAFlag \"Blather\" if stat Player Blather > 3 2 1",//if blatrher>3, go to branch indexed at 2, else go to branch indexed at 1
-		"/option if stat JohnCena Suspicion <= 3 \"Deceive\" if stat Player Deceive > 3 2 1",
+		"/option if stat JohnCena Suspicion <= 3 \"Deceive\" if stat Player Deceive > 3 2 1", //the stat of that player represents how suspicious they are of the particular body you are possessing. JohnCena is the body we are currently possessing.
 		"/stop_talk" //this ends the convo and close diaglogue box - only do this once you are completely done with the talking
         "/jump + 0"// goes to the branch 0
         "/jump - 1"//makes it go 2 parents back
     ]
-}
+}//btw commenting breaks this
+//loyalty is just a general trait which applies to the current chracter you are possessing - it shows the loyalty others have toawrds the possessee.

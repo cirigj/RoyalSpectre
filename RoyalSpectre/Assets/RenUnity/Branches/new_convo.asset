@@ -9,14 +9,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: da4f42e8f27847b4a9dfebe8af81667a, type: 3}
-  m_Name: 01_Marc_Stef_00
+  m_Name: new_convo
   m_EditorClassIdentifier: 
-  cachedIndex: 64
+  cachedIndex: -1
   branch:
-    branchName: 01_Marc_Stef_00
+    branchName: new_convo
     script:
-    - /start_talk Marc
-    - Hello Marc, why are you over here and not in your position as a guard
-    - /option "Because mi lord, your alluring presence charmed me " 0
-    - /option "I could not resist thy temptation to approach you" 0
-    - /option "Eh, um  I just felt like it" 1
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 7

@@ -26,7 +26,7 @@
 		// * ~ WARNING: Removing characters from the middle of the list will also      *
 		// *   break and character data you may have saved.                            *
 		// *****************************************************************************
-
+        //whenever you add a new one, add it to the end fo the list, all characters throughout the game are going to be here
 		public enum Character {
 			InvalidName = 0,
             Player,

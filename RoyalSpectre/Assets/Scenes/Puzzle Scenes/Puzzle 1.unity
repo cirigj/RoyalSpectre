@@ -3001,7 +3001,7 @@ GameObject:
   - 65: {fileID: 1482128303}
   - 135: {fileID: 1482128302}
   m_Layer: 0
-  m_Name: Person A
+  m_Name: Stefano
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3057,7 +3057,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e2b044fa3e9edd479c36623da133210, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 
+  name: Stefano
   objType: 0
   player: 0
   walkingLeft: 0
@@ -3074,8 +3074,8 @@ MonoBehaviour:
   nameplate: {fileID: 2051394835}
   character: 2
   convo:
-  - character: 1
-    branch: {fileID: 11400000, guid: 83757a2a61c0b97479dec3ef5b89dd87, type: 2}
+  - character: 4
+    branch: {fileID: 11400000, guid: 3467e0911e9c51242ab5454d2a01ed10, type: 2}
 --- !u!4 &1482128306
 Transform:
   m_ObjectHideFlags: 0
@@ -3458,9 +3458,9 @@ MonoBehaviour:
       value: 0
     - stat: 6
       value: 0
-  writeSpeed: 0.1
-  messageBoxPrefab: {fileID: 0}
-  uiCanvas: {fileID: 0}
+  writeSpeed: 0.5
+  messageBoxPrefab: {fileID: 11497064, guid: 0d820cdc259176542bda12a3d7480752, type: 2}
+  uiCanvas: {fileID: 341012481}
 --- !u!1001 &1615503166
 Prefab:
   m_ObjectHideFlags: 0
@@ -4294,7 +4294,7 @@ GameObject:
   - 65: {fileID: 1872729706}
   - 135: {fileID: 1872729705}
   m_Layer: 0
-  m_Name: Person B
+  m_Name: Marc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4350,7 +4350,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e2b044fa3e9edd479c36623da133210, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 
+  name: Marc
   objType: 0
   player: 0
   walkingLeft: 0
@@ -4365,7 +4365,7 @@ MonoBehaviour:
   currentRoom: {fileID: 1173263398}
   suspicionLevel: 0
   nameplate: {fileID: 1957606936}
-  character: 1
+  character: 4
   convo: []
 --- !u!4 &1872729709
 Transform:
