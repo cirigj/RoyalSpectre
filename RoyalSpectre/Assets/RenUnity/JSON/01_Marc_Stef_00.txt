@@ -2,10 +2,10 @@
     "branchName": "01_Marc_Stef_00",
     "script": [
     	"/start_talk Marc",
-    	" Hello Marc, why are you over here and not in your position as a guard",
+    	"Hello Marc, why are you over here and not in your position as a guard",
     	"/option \"Because mi lord, your alluring presence charmed me \" 0",
     	"/option \"I could not resist thy temptation to approach you\" 0",
-    	"/option \"Eh", um  I just felt like it\" 1",
+    	"/option \"Eh, um  I just felt like it\" 1"
 
     	 
 

@@ -11,7 +11,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da4f42e8f27847b4a9dfebe8af81667a, type: 3}
   m_Name: 01_Marc_Stef_00
   m_EditorClassIdentifier: 
-  cachedIndex: -1
+  cachedIndex: 64
   branch:
     branchName: 01_Marc_Stef_00
-    script: []
+    script:
+    - /start_talk Marc
+    - Hello Marc, why are you over here and not in your position as a guard
+    - /option "Because mi lord, your alluring presence charmed me " 0
+    - /option "I could not resist thy temptation to approach you" 0
+    - /option "Eh, um  I just felt like it" 1
