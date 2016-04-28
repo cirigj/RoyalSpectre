@@ -15,8 +15,8 @@ MonoBehaviour:
   branch:
     branchName: 02_Col_Millie00
     script:
-    - /start_talk
+    - /start_talk Millie
     - What can I do for ya, soldier?
     - /wait
     - /option "Have you heard anything interesting going on in the castle?" 0
-    - /option "Just wandering how dinner is goin" 1
+    - /option "Just wondering how dinner is going." 1

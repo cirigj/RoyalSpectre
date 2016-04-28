@@ -4,8 +4,8 @@
         "/start_talk Millie",
         "Ooh, that's good, I bet Adin would be interested.",
         "/wait",
-        "/jump + 0 if Colten Suspicion < 10",
-        "/jump + 1 if Colten Suspicion >= 10",
+        "if Colten Suspicion < 10 jump 0",
+        "if Colten Suspicion >= 10 jump 1",
         "/wait",
         "/stop_talk"
     ]

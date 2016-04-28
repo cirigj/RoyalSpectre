@@ -18,5 +18,5 @@ MonoBehaviour:
     - /start_talk Colten
     - You'd best forget you heard that Emeline
     - /wait
-    - /set_stat Emiline Suspicion + 20
+    - /set_stat Emeline Suspicion + 20
     - /stop_talk

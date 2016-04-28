@@ -21,4 +21,4 @@ MonoBehaviour:
     - /option if flag GuardRumor "I was wondering about what you mentioned earlier."
       0
     - /option if !flag GuardRumor "Deceive" if stat Player Deceive > 3 0 1
-    - /option Nevermind 1
+    - /option "Nevermind" 1
