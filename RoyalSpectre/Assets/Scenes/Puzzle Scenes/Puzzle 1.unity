@@ -3458,9 +3458,9 @@ MonoBehaviour:
       value: 0
     - stat: 6
       value: 0
-  writeSpeed: 0.1
-  messageBoxPrefab: {fileID: 0}
-  uiCanvas: {fileID: 0}
+  writeSpeed: 0.5
+  messageBoxPrefab: {fileID: 11497064, guid: 0d820cdc259176542bda12a3d7480752, type: 2}
+  uiCanvas: {fileID: 341012481}
 --- !u!1001 &1615503166
 Prefab:
   m_ObjectHideFlags: 0
