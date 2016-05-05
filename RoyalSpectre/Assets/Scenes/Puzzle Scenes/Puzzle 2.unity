@@ -1614,7 +1614,7 @@ MonoBehaviour:
   walkingRight: 0
   walkingUp: 0
   walkingDown: 0
-  canSwitch: 0
+  canSwitch: 1
   cooldown: 0
   mainCam: {fileID: 875861734}
   ghostHunter: {fileID: 173268948}
@@ -1639,7 +1639,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 684987396}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.81, y: 0, z: -1.02}
+  m_LocalPosition: {x: 10.81, y: 0, z: -2.86}
   m_LocalScale: {x: 0.75, y: 0.75, z: 1}
   m_Children:
   - {fileID: 2027303836}
@@ -4145,7 +4145,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1608204029}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 24.95, y: 0, z: 1.25}
+  m_LocalPosition: {x: 24.95, y: 0, z: -2.88}
   m_LocalScale: {x: 0.75, y: 0.75, z: 1}
   m_Children:
   - {fileID: 1637562467}
@@ -4677,7 +4677,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1739710074}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 18.96, y: 0, z: 0}
+  m_LocalPosition: {x: 18.96, y: 0, z: -1.58}
   m_LocalScale: {x: 0.75, y: 0.75, z: 1}
   m_Children:
   - {fileID: 1413625894}
@@ -5097,7 +5097,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1815775096}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.72, y: 0, z: 1.26}
+  m_LocalPosition: {x: -2.72, y: 0, z: -2.31}
   m_LocalScale: {x: 0.75, y: 0.75, z: 1}
   m_Children:
   - {fileID: 1983657934}
@@ -5918,7 +5918,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2126543162}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.21, y: 0, z: 0}
+  m_LocalPosition: {x: 6.21, y: 0, z: -1.98}
   m_LocalScale: {x: 0.75, y: 0.75, z: 1}
   m_Children:
   - {fileID: 935577491}
