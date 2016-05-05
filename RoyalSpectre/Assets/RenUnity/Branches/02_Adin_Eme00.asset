@@ -18,6 +18,6 @@ MonoBehaviour:
     - /start_talk Emeline
     - Need somethin, love?
     - /wait
-    - /option if flag GuardRumor "Have you heard anything from the guards?" 0
+    - /option if flag GuardRumor "Have you heard from the guards?" 0
     - /option "How did lunch go?" 1
     - /option "I've done my work for tonight" 2

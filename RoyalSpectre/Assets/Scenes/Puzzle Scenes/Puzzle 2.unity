@@ -1678,7 +1678,7 @@ MonoBehaviour:
   walkingRight: 0
   walkingUp: 0
   walkingDown: 0
-  canSwitch: 1
+  canSwitch: 0
   cooldown: 0
   mainCam: {fileID: 875861734}
   ghostHunter: {fileID: 173268948}
