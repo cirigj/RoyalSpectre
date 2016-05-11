@@ -95,7 +95,6 @@ public class SpriteRigHandler : MonoBehaviour {
     void OnDrawGizmos() {
         if (_showBones) {
             Gizmo_ShowBones();
-
             SceneView.RepaintAll();
         }
     }
@@ -151,12 +150,16 @@ public class SpriteRigHandler_Editor : Editor {
 
 
         selfScript._showBones = GUILayout.Toggle(selfScript._showBones, "Show Bones", EditorStyles.radioButton);
+
+
         //selfScript._showCosmeticSprites = GUILayout.Toggle(selfScript._showCosmeticSprites, "Show Cosmetic Sprites", EditorStyles.radioButton);
+
+        /*
         if (GUILayout.Button("Show Cosmetic Bones")) {
             selfScript._showCosmeticSprites = !selfScript._showCosmeticSprites;
             selfScript.SetViewCosmeticBonesInHierarchy(selfScript._showCosmeticSprites);
         }
-
+        */
         EditorGUILayout.EndVertical();
 
 
