@@ -713,52 +713,111 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _initializeRigAtStartup: 0
-  _showBones: 0
+  _showBones: 1
   _showCosmeticSprites: 0
+  boneList:
+  - boneType: 1
+    runtimeBone: {fileID: 438960}
+    cosmeticBone: {fileID: 21215666}
+    sprite: {fileID: 21300014, guid: cb72bd172aa19ab49bf7386a3dca5dc7, type: 3}
+  - boneType: 2
+    runtimeBone: {fileID: 417950}
+    cosmeticBone: {fileID: 21281716}
+    sprite: {fileID: 21300004, guid: cb72bd172aa19ab49bf7386a3dca5dc7, type: 3}
+  - boneType: 3
+    runtimeBone: {fileID: 444940}
+    cosmeticBone: {fileID: 21223270}
+    sprite: {fileID: 21300000, guid: cb72bd172aa19ab49bf7386a3dca5dc7, type: 3}
+  - boneType: 4
+    runtimeBone: {fileID: 490268}
+    cosmeticBone: {fileID: 21239890}
+    sprite: {fileID: 21300002, guid: cb72bd172aa19ab49bf7386a3dca5dc7, type: 3}
+  - boneType: 5
+    runtimeBone: {fileID: 476598}
+    cosmeticBone: {fileID: 21229246}
+    sprite: {fileID: 21300008, guid: cb72bd172aa19ab49bf7386a3dca5dc7, type: 3}
+  - boneType: 6
+    runtimeBone: {fileID: 458040}
+    cosmeticBone: {fileID: 21279262}
+    sprite: {fileID: 21300006, guid: cb72bd172aa19ab49bf7386a3dca5dc7, type: 3}
+  - boneType: 7
+    runtimeBone: {fileID: 406452}
+    cosmeticBone: {fileID: 21271558}
+    sprite: {fileID: 21300010, guid: cb72bd172aa19ab49bf7386a3dca5dc7, type: 3}
+  - boneType: 8
+    runtimeBone: {fileID: 416842}
+    cosmeticBone: {fileID: 21245452}
+    sprite: {fileID: 21300012, guid: cb72bd172aa19ab49bf7386a3dca5dc7, type: 3}
+  - boneType: 9
+    runtimeBone: {fileID: 447790}
+    cosmeticBone: {fileID: 21294664}
+    sprite: {fileID: 21300018, guid: cb72bd172aa19ab49bf7386a3dca5dc7, type: 3}
+  - boneType: 10
+    runtimeBone: {fileID: 444760}
+    cosmeticBone: {fileID: 21236650}
+    sprite: {fileID: 21300016, guid: cb72bd172aa19ab49bf7386a3dca5dc7, type: 3}
+  - boneType: 11
+    runtimeBone: {fileID: 445902}
+    cosmeticBone: {fileID: 21255588}
+    sprite: {fileID: 21300020, guid: cb72bd172aa19ab49bf7386a3dca5dc7, type: 3}
   hips:
+    boneType: 0
     runtimeBone: {fileID: 438960}
     cosmeticBone: {fileID: 21215666}
     sprite: {fileID: 21300014, guid: cb72bd172aa19ab49bf7386a3dca5dc7, type: 3}
   chest:
+    boneType: 0
     runtimeBone: {fileID: 417950}
     cosmeticBone: {fileID: 21281716}
     sprite: {fileID: 21300004, guid: cb72bd172aa19ab49bf7386a3dca5dc7, type: 3}
   head:
+    boneType: 0
     runtimeBone: {fileID: 444940}
     cosmeticBone: {fileID: 21223270}
     sprite: {fileID: 21300000, guid: cb72bd172aa19ab49bf7386a3dca5dc7, type: 3}
   leftUpperArm:
+    boneType: 0
     runtimeBone: {fileID: 490268}
     cosmeticBone: {fileID: 21239890}
     sprite: {fileID: 21300002, guid: cb72bd172aa19ab49bf7386a3dca5dc7, type: 3}
   leftForeArm:
+    boneType: 0
     runtimeBone: {fileID: 476598}
     cosmeticBone: {fileID: 21229246}
     sprite: {fileID: 21300008, guid: cb72bd172aa19ab49bf7386a3dca5dc7, type: 3}
   rightUpperArm:
+    boneType: 0
     runtimeBone: {fileID: 458040}
     cosmeticBone: {fileID: 21279262}
     sprite: {fileID: 21300006, guid: cb72bd172aa19ab49bf7386a3dca5dc7, type: 3}
   rightForeArm:
+    boneType: 0
     runtimeBone: {fileID: 406452}
     cosmeticBone: {fileID: 21271558}
     sprite: {fileID: 21300010, guid: cb72bd172aa19ab49bf7386a3dca5dc7, type: 3}
   leftThigh:
+    boneType: 0
     runtimeBone: {fileID: 416842}
     cosmeticBone: {fileID: 21245452}
     sprite: {fileID: 21300012, guid: cb72bd172aa19ab49bf7386a3dca5dc7, type: 3}
   leftShin:
+    boneType: 0
     runtimeBone: {fileID: 447790}
     cosmeticBone: {fileID: 21294664}
     sprite: {fileID: 21300018, guid: cb72bd172aa19ab49bf7386a3dca5dc7, type: 3}
   rightThigh:
+    boneType: 0
     runtimeBone: {fileID: 444760}
     cosmeticBone: {fileID: 21236650}
     sprite: {fileID: 21300016, guid: cb72bd172aa19ab49bf7386a3dca5dc7, type: 3}
   rightShin:
+    boneType: 0
     runtimeBone: {fileID: 445902}
     cosmeticBone: {fileID: 21255588}
     sprite: {fileID: 21300020, guid: cb72bd172aa19ab49bf7386a3dca5dc7, type: 3}
+  boneColor: {r: 0, g: 0, b: 0, a: 1}
+  jointColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  jointRadius: 0.05
 --- !u!212 &21215666
 SpriteRenderer:
   m_ObjectHideFlags: 1

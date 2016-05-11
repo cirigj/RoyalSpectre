@@ -271,6 +271,18 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11472552, guid: 09ddcc32ccae30548899fe0487a7dac8, type: 2}
+      propertyPath: boneColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11472552, guid: 09ddcc32ccae30548899fe0487a7dac8, type: 2}
+      propertyPath: boneColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11472552, guid: 09ddcc32ccae30548899fe0487a7dac8, type: 2}
+      propertyPath: boneColor.b
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 09ddcc32ccae30548899fe0487a7dac8, type: 2}
   m_IsPrefabParent: 0

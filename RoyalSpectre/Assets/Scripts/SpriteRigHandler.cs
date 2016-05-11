@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using System.Linq;
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -55,8 +56,11 @@ public class SpriteRigHandler : MonoBehaviour {
     public bool _showBones = false;
 
     [HideInInspector]
-    public bool _showCosmeticSprites = false;    
+    public bool _showCosmeticSprites = false;
 
+    public List<BoneSpriteBinder> boneList;
+
+    /*
     public BoneSpriteBinder hips;
     public BoneSpriteBinder chest;
     public BoneSpriteBinder head;
@@ -70,6 +74,7 @@ public class SpriteRigHandler : MonoBehaviour {
     public BoneSpriteBinder leftShin;
     public BoneSpriteBinder rightThigh;
     public BoneSpriteBinder rightShin;
+    */
 
     public Color boneColor = Color.cyan;
     public Color jointColor = Color.yellow;
@@ -90,6 +95,12 @@ public class SpriteRigHandler : MonoBehaviour {
 	}
 
     public void InitRig() {
+
+        foreach (BoneSpriteBinder binder in boneList) {
+            binder.Init();
+        }
+
+        /*
         hips.Init();
         chest.Init();
         head.Init();
@@ -103,9 +114,16 @@ public class SpriteRigHandler : MonoBehaviour {
         leftShin.Init();
         rightThigh.Init();
         rightShin.Init();
+        */
     }
 
     public void SetViewCosmeticBonesInHierarchy(bool showBones) {
+
+        foreach (BoneSpriteBinder binder in boneList) {
+            binder.SetVisiblityInHierarchy(showBones);
+        }
+
+        /*
         hips.SetVisiblityInHierarchy(showBones);
         chest.SetVisiblityInHierarchy(showBones);
         head.SetVisiblityInHierarchy(showBones);
@@ -119,31 +137,35 @@ public class SpriteRigHandler : MonoBehaviour {
         leftShin.SetVisiblityInHierarchy(showBones);
         rightThigh.SetVisiblityInHierarchy(showBones);
         rightShin.SetVisiblityInHierarchy(showBones);
+        */
     }
 
     void OnDrawGizmos() {
         if (_showBones) {
-            Gizmo_ShowBones(transform);
+            Gizmo_ShowBones();
 
             SceneView.RepaintAll();
         }
     }
 
-    private void Gizmo_ShowBones(Transform rootBone) {
-        foreach (Transform childBone in rootBone) {
-            Color originalColor = Gizmos.color;
+    private void Gizmo_ShowBones() {
+        Color originalColor = Gizmos.color;
 
+        foreach (BoneSpriteBinder binder in boneList) {
             Gizmos.color = jointColor;
-            Gizmos.DrawSphere(childBone.position, jointRadius);
+            Gizmos.DrawSphere(binder.runtimeBone.position, jointRadius);
 
             Gizmos.color = boneColor;
-            Gizmos.DrawLine(rootBone.position, childBone.position);
-
-            Gizmos.color = originalColor;
-
-            Gizmo_ShowBones(childBone);
+            foreach (Transform child in binder.runtimeBone) {
+                if (boneList.Select(x => x.runtimeBone).ToList<Transform>().Contains(child)) {
+                    Gizmos.DrawLine(binder.runtimeBone.position, child.position);
+                }
+            }
         }
+
+        Gizmos.color = originalColor;
     }
+
 }
 
 #if UNITY_EDITOR
@@ -174,6 +196,7 @@ public class SpriteRigHandler_Editor : Editor {
         EditorGUILayout.EndHorizontal();
 
         EditorGUILayout.BeginVertical();
+
 
         selfScript._showBones = GUILayout.Toggle(selfScript._showBones, "Show Bones", EditorStyles.radioButton);
         //selfScript._showCosmeticSprites = GUILayout.Toggle(selfScript._showCosmeticSprites, "Show Cosmetic Sprites", EditorStyles.radioButton);
