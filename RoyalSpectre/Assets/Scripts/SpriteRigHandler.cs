@@ -60,22 +60,6 @@ public class SpriteRigHandler : MonoBehaviour {
 
     public List<BoneSpriteBinder> boneList;
 
-    /*
-    public BoneSpriteBinder hips;
-    public BoneSpriteBinder chest;
-    public BoneSpriteBinder head;
-
-    public BoneSpriteBinder leftUpperArm;
-    public BoneSpriteBinder leftForeArm;
-    public BoneSpriteBinder rightUpperArm;
-    public BoneSpriteBinder rightForeArm;
-
-    public BoneSpriteBinder leftThigh;
-    public BoneSpriteBinder leftShin;
-    public BoneSpriteBinder rightThigh;
-    public BoneSpriteBinder rightShin;
-    */
-
     public Color boneColor = Color.cyan;
     public Color jointColor = Color.yellow;
     public float jointRadius = 0.05f;
@@ -99,22 +83,6 @@ public class SpriteRigHandler : MonoBehaviour {
         foreach (BoneSpriteBinder binder in boneList) {
             binder.Init();
         }
-
-        /*
-        hips.Init();
-        chest.Init();
-        head.Init();
-
-        leftUpperArm.Init();
-        leftForeArm.Init();
-        rightUpperArm.Init();
-        rightForeArm.Init();
-
-        leftThigh.Init();
-        leftShin.Init();
-        rightThigh.Init();
-        rightShin.Init();
-        */
     }
 
     public void SetViewCosmeticBonesInHierarchy(bool showBones) {
@@ -122,22 +90,6 @@ public class SpriteRigHandler : MonoBehaviour {
         foreach (BoneSpriteBinder binder in boneList) {
             binder.SetVisiblityInHierarchy(showBones);
         }
-
-        /*
-        hips.SetVisiblityInHierarchy(showBones);
-        chest.SetVisiblityInHierarchy(showBones);
-        head.SetVisiblityInHierarchy(showBones);
-
-        leftUpperArm.SetVisiblityInHierarchy(showBones);
-        leftForeArm.SetVisiblityInHierarchy(showBones);
-        rightUpperArm.SetVisiblityInHierarchy(showBones);
-        rightForeArm.SetVisiblityInHierarchy(showBones);
-
-        leftThigh.SetVisiblityInHierarchy(showBones);
-        leftShin.SetVisiblityInHierarchy(showBones);
-        rightThigh.SetVisiblityInHierarchy(showBones);
-        rightShin.SetVisiblityInHierarchy(showBones);
-        */
     }
 
     void OnDrawGizmos() {
