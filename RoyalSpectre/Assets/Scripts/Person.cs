@@ -15,7 +15,8 @@ public class Person : InteractableObject {
 	//if this person is currently the player
 	public bool player;
 	//bools for animations
-	public bool walkingLeft, walkingRight, walkingUp, walkingDown, canSwitch;
+	public bool canSwitch;
+    public Animator anim;
 	//moving speed
 	float speed = 1f;
 	public float cooldown;
@@ -50,6 +51,7 @@ public class Person : InteractableObject {
 		}
 		suspicionLevel = 0;
 		nameplate.GetComponentInChildren<Text> ().text = character.ToString ();
+        anim = GetComponentInChildren<Animator>();
 	}
 
 	//if player tries to talk
@@ -85,52 +87,44 @@ public class Person : InteractableObject {
 		if (player) {
 			//moving and animation logic ----------------------------------------------
 			if (Input.GetKey (KeyCode.W)) {
-				walkingUp = true;
-				//anim.SetBool ("walkingUp",true);
+				anim.SetBool ("walking",true);
 				//anim.SetBool ("idle", false);
 				//upperbounds check
 				//if((transform.position + Vector3.forward * speed * Time.deltaTime).z < 2)
 				transform.position += Vector3.forward * speed * Time.deltaTime;
 			}
 			if (Input.GetKey (KeyCode.A)) {
-				walkingLeft = true;
-				//anim.SetBool ("walkingLeft",true);
+				anim.SetBool ("walking",true);
 				//anim.SetBool ("idle", false);
 				transform.position += Vector3.left * speed * Time.deltaTime;
 			}
 			if (Input.GetKey (KeyCode.S)) {
-				walkingDown = true;
-				//anim.SetBool ("walkingDown",true);
+				anim.SetBool ("walking",true);
 				//anim.SetBool ("idle", false);
 				//lowerbounds check
 				//if((transform.position + Vector3.forward * speed * Time.deltaTime).z > -2)
 				transform.position += Vector3.back * speed * Time.deltaTime;
 			}
 			if (Input.GetKey (KeyCode.D)) {
-				walkingRight = true;
-				//anim.SetBool ("walkingRight",true);
+				anim.SetBool ("walking",true);
 				//anim.SetBool ("idle", false);
 				transform.position += Vector3.right * speed * Time.deltaTime;
 			}
 			if (Input.GetKeyUp (KeyCode.W)) {
-				//anim.SetBool ("walkingUp", false);
+				anim.SetBool ("walking", false);
 				//anim.SetBool ("idle", true);
-				walkingUp = false;
 			}
 			if (Input.GetKeyUp (KeyCode.A)) {
-				//anim.SetBool ("walkingLeft", false);
+				anim.SetBool ("walking", false);
 				//anim.SetBool ("idle", true);
-				walkingLeft = false;
 			}
 			if (Input.GetKeyUp (KeyCode.S)) {
-				//anim.SetBool ("walkingDown", false);
+				anim.SetBool ("walking", false);
 				//anim.SetBool ("idle", true);
-				walkingDown = false;
 			}
 			if (Input.GetKeyUp (KeyCode.D)) {
-				//anim.SetBool ("walkingRight", false);
+				anim.SetBool ("walking", false);
 				//anim.SetBool ("idle", true);
-				walkingRight = false;
 			} // -----------------------------------------------------
 			if (Input.GetKeyDown (KeyCode.Space) && cooldown <= Time.time) {
 				UseGhostForm ();
