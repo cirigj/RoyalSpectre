@@ -168,7 +168,7 @@ public class Person : InteractableObject {
 
 	void OnTriggerStay(Collider col){
 		//for controlling other people
-		if (player && Input.GetKey (KeyCode.Space) && col.gameObject.GetComponent<Person>() != null && cooldown <= Time.time) {
+		if (!DialogueParser.isParsing && player && Input.GetKey (KeyCode.Space) && col.gameObject.GetComponent<Person>() != null && cooldown <= Time.time) {
 			Control (col.gameObject.GetComponent<Person> ());
 		}
 		//for talking to other people

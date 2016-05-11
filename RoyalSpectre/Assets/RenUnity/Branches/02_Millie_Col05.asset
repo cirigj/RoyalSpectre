@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da4f42e8f27847b4a9dfebe8af81667a, type: 3}
   m_Name: 02_Millie_Col05
   m_EditorClassIdentifier: 
-  cachedIndex: -1
+  cachedIndex: 60
   branch:
     branchName: 02_Millie_Col05
     script:
