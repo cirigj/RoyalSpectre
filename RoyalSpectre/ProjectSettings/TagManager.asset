@@ -42,3 +42,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: CharacterRig
+    uniqueID: 2210686915
+    locked: 0
