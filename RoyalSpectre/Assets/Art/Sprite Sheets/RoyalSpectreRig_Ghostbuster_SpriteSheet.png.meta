@@ -1,9 +1,21 @@
 fileFormatVersion: 2
 guid: 65ba518e8215a2147ad85adbebc52b9f
-timeCreated: 1462941146
+timeCreated: 1462941945
 licenseType: Pro
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Ghostbuster_Head
+    21300002: Ghostbuster_Torso
+    21300004: Ghostbuster_Arm_Right
+    21300006: Ghostbuster_Cape
+    21300008: Ghostbuster_Hand_Left
+    21300010: Ghostbuster_Arm_Left
+    21300012: Ghostbuster_Hips
+    21300014: Ghostbuster_Hand_Right
+    21300016: Ghostbuster_Leg_Left
+    21300018: Ghostbuster_Leg_Right
+    21300020: Ghostbuster_Foot_Left
+    21300022: Ghostbuster_Foot_Right
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,26 +42,204 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
-  nPOTScale: 1
+    wrapMode: 1
+  nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
-  alphaIsTransparency: 0
-  textureType: -1
+  alphaIsTransparency: 1
+  textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Ghostbuster_Head
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 168
+        width: 72
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20, y: 40.5}
+        - {x: -36, y: 26.5}
+        - {x: -36, y: -37.5}
+        - {x: -35, y: -40.5}
+        - {x: 33, y: -40.5}
+        - {x: 36, y: -39.5}
+        - {x: 36, y: 23.5}
+        - {x: 21, y: 40.5}
+    - name: Ghostbuster_Torso
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 170
+        width: 74
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 28, y: 39.5}
+        - {x: -16, y: 39.5}
+        - {x: -37, y: 30.5}
+        - {x: -37, y: -27.5}
+        - {x: -29, y: -39.5}
+        - {x: 12, y: -39.5}
+        - {x: 30, y: -28.5}
+        - {x: 37, y: -0.5}
+        - {x: 37, y: 24.5}
+    - name: Ghostbuster_Arm_Right
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 193
+        width: 45
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3.5, y: 29.5}
+        - {x: -22.5, y: 10.5}
+        - {x: -22.5, y: -7.5}
+        - {x: -12.5, y: -10.5}
+        - {x: -1.5, y: -29.5}
+        - {x: 20.5, y: -29.5}
+        - {x: 22.5, y: -28.5}
+        - {x: 22.5, y: 26.5}
+        - {x: 18.5, y: 29.5}
+    - name: Ghostbuster_Cape
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 41
+        width: 28
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghostbuster_Hand_Left
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 83
+        width: 24
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghostbuster_Arm_Left
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 108
+        width: 26
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghostbuster_Hips
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 114
+        width: 58
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24, y: 22}
+        - {x: -29, y: 16}
+        - {x: -29, y: -19}
+        - {x: -26, y: -22}
+        - {x: 25, y: -22}
+        - {x: 29, y: -19}
+        - {x: 29, y: 22}
+    - name: Ghostbuster_Hand_Right
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 133
+        width: 24
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghostbuster_Leg_Left
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 47
+        width: 34
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 26.5}
+        - {x: -17, y: 14.5}
+        - {x: -17, y: -26.5}
+        - {x: 15, y: -26.5}
+        - {x: 17, y: -16.5}
+        - {x: 17, y: 26.5}
+    - name: Ghostbuster_Leg_Right
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 63
+        width: 34
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 26.5}
+        - {x: -17, y: 22.5}
+        - {x: -17, y: -12.5}
+        - {x: -8, y: -26.5}
+        - {x: 17, y: -26.5}
+        - {x: 17, y: 19.5}
+        - {x: 11, y: 26.5}
+    - name: Ghostbuster_Foot_Left
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 4
+        width: 28
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Ghostbuster_Foot_Right
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 3
+        width: 28
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     outline: []
   spritePackingTag: 
   userData: 

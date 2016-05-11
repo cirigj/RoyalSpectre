@@ -1,9 +1,20 @@
 fileFormatVersion: 2
 guid: e15f6a9ba3441c54f8e928a3184d3753
-timeCreated: 1462941147
+timeCreated: 1462941685
 licenseType: Pro
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Edric_Head
+    21300002: Edric_Arm_Left
+    21300004: Edric_Torso
+    21300006: Edric_Arm_Right
+    21300008: Edric_Hand_Left
+    21300010: Edric_Hips
+    21300012: Edric_Hand_Right
+    21300014: Edric_Leg_Left
+    21300016: Edric_Leg_Right
+    21300018: Edric_Foot_Left
+    21300020: Edric_Foot_Right
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,26 +41,198 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
-  nPOTScale: 1
+    wrapMode: 1
+  nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
-  alphaIsTransparency: 0
-  textureType: -1
+  alphaIsTransparency: 1
+  textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Edric_Head
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 170
+        width: 78
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 37, y: 13}
+        - {x: 38, y: 14}
+        - {x: 38, y: 23}
+        - {x: 36, y: 31}
+        - {x: 31, y: 33}
+        - {x: 30, y: 33}
+        - {x: 32, y: 36}
+        - {x: 29, y: 39}
+        - {x: -20, y: 39}
+        - {x: -29, y: 38}
+        - {x: -39, y: 27}
+        - {x: -39, y: -22}
+        - {x: -38, y: -29}
+        - {x: -31, y: -39}
+        - {x: 16, y: -39}
+        - {x: 35, y: -32}
+        - {x: 35, y: 11}
+        - {x: 33, y: 15}
+        - {x: 34, y: 13}
+      - - {x: 36, y: -4}
+        - {x: 38, y: -6}
+        - {x: 39, y: -6}
+        - {x: 39, y: -1}
+        - {x: 37, y: -1}
+    - name: Edric_Arm_Left
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 191
+        width: 26
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Edric_Torso
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 169
+        width: 74
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20, y: 39}
+        - {x: -37, y: 20}
+        - {x: -37, y: -39}
+        - {x: 30, y: -39}
+        - {x: 37, y: -30}
+        - {x: 37, y: 35}
+        - {x: 25, y: 39}
+    - name: Edric_Arm_Right
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 195
+        width: 26
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Edric_Hand_Left
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 122
+        width: 24
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Edric_Hips
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 107
+        width: 58
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -24, y: 22}
+        - {x: -29, y: 16}
+        - {x: -29, y: -19}
+        - {x: -26, y: -22}
+        - {x: 25, y: -22}
+        - {x: 29, y: -19}
+        - {x: 29, y: 22}
+    - name: Edric_Hand_Right
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 135
+        width: 24
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Edric_Leg_Left
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 43
+        width: 34
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 26.5}
+        - {x: -17, y: 14.5}
+        - {x: -17, y: -26.5}
+        - {x: 15, y: -26.5}
+        - {x: 17, y: -16.5}
+        - {x: 17, y: 26.5}
+    - name: Edric_Leg_Right
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 62
+        width: 34
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 26.5}
+        - {x: -17, y: 22.5}
+        - {x: -17, y: -12.5}
+        - {x: -8, y: -26.5}
+        - {x: 17, y: -26.5}
+        - {x: 17, y: 19.5}
+        - {x: 11, y: 26.5}
+    - name: Edric_Foot_Left
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 3
+        width: 28
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: Edric_Foot_Right
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 3
+        width: 28
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
     outline: []
   spritePackingTag: 
   userData: 
